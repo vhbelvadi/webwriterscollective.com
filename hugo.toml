@@ -1,0 +1,4 @@
+baseURL = "https://webwriterscollective.com/"
+languageCode = "en-GB"
+title = "Web Writers’ Collective"
+theme = "webwriterscollective"
