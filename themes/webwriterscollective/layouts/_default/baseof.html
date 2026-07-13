@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ block "title" . }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+  <link rel="stylesheet" href="{{ "css/app.css" | relURL }}">
   {{ block "head" . }}{{ end }}
 </head>
 <body>
-{{ block "main" . }}{{ end }}
+  {{ block "main" . }}{{ end }}
 </body>
 </html>
