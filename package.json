@@ -2,11 +2,12 @@
   "name": "webwriterscollective.com",
   "private": true,
   "scripts": {
-    "watch": "tailwindcss -i themes/webwriterscollective/assets/css/app.css -o themes/webwriterscollective/static/css/app.css --watch",
-    "prod": "tailwindcss -i themes/webwriterscollective/assets/css/app.css -o themes/webwriterscollective/static/css/app.css --minify"
+    "watch": "tailwindcss -i themes/webwriterscollective/assets/css/styles.css -o themes/webwriterscollective/static/css/app.css --watch",
+    "prod": "tailwindcss -i themes/webwriterscollective/assets/css/styles.css -o themes/webwriterscollective/static/css/app.css --minify"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4",
+    "@tailwindcss/typography": "^0.5.20",
     "tailwindcss": "^4"
   }
 }

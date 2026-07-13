@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 items-stretch justify-between">
+    <div class="col-span-1">
+        <header class="sticky top-0">
+            <h1>{{ .Title }}</h1>
+            <div class="prose text-foreground/50">
+                {{ .Content }}
+            </div>
+        </header>
+    </div>
+
+    <div class="col-span-1"></div>
+
+    <div class="flex flex-col gap-2 col-span-1 md:col-span-1 lg:col-span-2">
+        {{ range .Pages.ByParam "issue" }}
+            <div class="border border-foreground flex flex-row gap-1 bg-[rgb({{ .Params.accent }}/25%)] p-3">
+                <div class="flex flex-col items-start justify-between max-w-[30%]">
+                    <h1 class="text-xl">{{ .Title }}</h1>
+                    <a href="{{ .RelPermalink }}" class="button">View issue &rarr;</a>
+                </div>
+                <div class="flex flex-col divide-y divide-foreground">
+                    {{ range .RegularPages.ByDate.Reverse }}
+                        {{ .Title }}
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

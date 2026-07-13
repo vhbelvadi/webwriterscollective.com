@@ -1,0 +1,26 @@
+{{ define "main" }}
+<article class="mx-auto max-w-3xl p-8">
+  <header>
+    <h1 class="text-4xl font-bold">{{ .Title }}</h1>
+
+    {{ with .Params.subtitle }}
+      <p class="mt-2 text-xl">{{ . }}</p>
+    {{ end }}
+
+    <p class="mt-4">
+      Issue {{ .Parent.Params.issue }} ·
+      {{ .Date.Format "2 January 2006" }}
+    </p>
+
+    {{ with .Params.authors }}
+      <p class="mt-2">
+        By {{ delimit . ", " }}
+      </p>
+    {{ end }}
+  </header>
+
+  <div class="prose mt-8">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

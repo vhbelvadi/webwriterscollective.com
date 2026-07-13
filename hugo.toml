@@ -1,4 +1,13 @@
 baseURL = "https://webwriterscollective.com/"
-languageCode = "en-GB"
+locale = "en-GB"
 title = "Web Writers’ Collective"
 theme = "webwriterscollective"
+
+[taxonomies]
+  tag = "tags"
+  author = "authors"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false

@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="{{ "css/app.css" | relURL }}">
   {{ block "head" . }}{{ end }}
 </head>
-<body>
-  {{ block "main" . }}{{ end }}
+<body class="max-w-350 mx-auto">
+  {{ partial "nav.html" . }}
+  <main class="mx-3">
+      {{ block "main" . }}{{ end }}
+  </main>
 </body>
 </html>
