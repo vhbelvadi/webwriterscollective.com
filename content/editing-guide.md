@@ -150,6 +150,14 @@ If you downloaded the file above, simply e-mail the file to [James G](mailto:rea
 
 ***
 
+# 4. Fixing typos and making minor changes
+
+Unfortunately, you will need to be familiar with git for this. Please make your changes to [this website’s repo](git@github.com:vhbelvadi/webwriterscollective.com.git) and submit a pull request.
+
+However, we appreciate that you might spot an error or wish to suggest improvements and either might not know Git or might not want to spend time making the fixes or improvements yourself. In that case, please [write to us](mailto:hello@vhbelvadi.com) directly.
+
+***
+
 # FAQs
 
 ## I don’t know markdown
