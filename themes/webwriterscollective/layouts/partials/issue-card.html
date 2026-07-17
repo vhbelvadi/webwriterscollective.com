@@ -9,7 +9,7 @@
         <div class="flex flex-col items-start justify-start {{ if ne $.size "small-size" }}lg:justify-between lg:max-w-[30%]{{ end }} gap-x-2">
             <div>
                 <span class="all-caps text-accent block mb-0.25 font-bold text-sm">Issue {{ .Params.issue }}</span>
-                {{ if ne .Title "Coming soon" }}<a href="{{ .RelPermalink }}"><h2 class="text-xl font-light!">{{ .Title }}</h2></a>{{ else }}<span class="text-foreground/40 text-xl">{{ .Title }}</span>{{ end }}
+                {{ if ne .Title "Coming soon" }}<a href="{{ .RelPermalink }}"><h2 class="text-xl font-light!">{{ .Title }}</h2></a>{{ else }}<span class="text-foreground/40 text-xl select-none">{{ .Title }}</span>{{ end }}
             </div>
             {{ if gt .RegularPages.Len 0 }}{{ if ne $.size "small-size" }}<a href="{{ .RelPermalink }}" class="button">Read</a>{{ end }}{{ end }}
         </div>
