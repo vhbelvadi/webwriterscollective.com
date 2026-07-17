@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors on Web Writers’ Collective</title>
+    <title>Our authors on Web Writers’ Collective</title>
     <link>http://localhost:1313/authors/</link>
-    <description>Recent content in Authors on Web Writers’ Collective</description>
+    <description>Recent content in Our authors on Web Writers’ Collective</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 17 Jul 2026 18:53:08 +0100</lastBuildDate>
@@ -27,13 +27,6 @@
       <link>http://localhost:1313/authors/v.h.-belvadi/</link>
       <pubDate>Fri, 17 Jul 2026 18:25:00 +0100</pubDate>
       <guid>http://localhost:1313/authors/v.h.-belvadi/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>James G</title>
-      <link>http://localhost:1313/authors/james-g/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/james-g/</guid>
       <description></description>
     </item>
   </channel>
