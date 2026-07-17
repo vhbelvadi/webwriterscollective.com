@@ -3,25 +3,25 @@
 /* FONTS */
 @font-face {
   font-family: "WebWritersSans";
-  src: url("/fonts/gamay-variable.woff2") format("woff2");
-  font-weight: 75 900;
-  font-stretch: normal;
+  src: url("/fonts/GT-America-VF.woff2") format("woff2");
+  font-weight: 450 900;
+  /*font-stretch: normal;*/
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "WebWritersSans";
-  src: url("/fonts/gamay-variable-italic.woff2") format("woff2");
-  font-weight: 75 900;
-  font-stretch: normal;
+  src: url("/fonts/GT-America-VF-italic.woff2") format("woff2");
+  font-weight: 450 900;
+  /*font-stretch: normal;*/
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "WebWritersMono";
   src: url("/fonts/GT-America-Mono-VF.woff2") format("woff2");
-  font-weight: 300 900;
-  font-stretch: normal;
+  font-weight: 450 900;
+  /*font-stretch: normal;*/
   font-style: normal;
   font-display: swap;
 }
@@ -40,6 +40,8 @@
     /* Typography */
     --font-sans: var(--sans);
     --font-sans--font-feature-settings: var(--sans-features);
+    --font-mono: var(--mono);
+    --font-mono--font-feature-settings: var(--mono-features);
 
     /* Text sizing */
     --text-sm: var(--sm);
@@ -77,10 +79,10 @@
     }
 }
 @utility font-condensed {
-    font-stretch: 75%;
+    font-stretch: 50% !important;
 }
 @utility font-expanded {
-    font-stretch: 125%;
+    font-stretch: 125% !important;
 }
 @utility transition-fade {
     @apply transition duration-500 ease-in-out hover:cursor-pointer!;
@@ -96,20 +98,20 @@
     --article-width: 640px;
 
     --spacer: 16px;
-    --sans: "WebWritersSans","Helvetica","Arial",sans-serif;
-    --sans-features: "kern", "liga", "onum", "ss04", "ss14", "ss16";
-    --mono: "WebWritersMono","Helvetica","Arial",sans-serif;
+    --sans: "WebWritersSans", "Helvetica", "Arial", sans-serif;
+    --sans-features: "kern", "liga", "onum", "ss02", "ss03", "ss04", "ss05";
+    --mono: "WebWritersMono", monospace;
     --mono-features: "kern", "liga", "tnum", "ss02", "ss03", "ss04", "ss05";
-    --sm: 0.8rem;
+    --sm: 0.825rem;
     --sm-leading: 1.5;
     --base: 16px;
-    --base-leading: 1.5;
+    --base-leading: 1.4;
     --body: 1.25rem;
-    --body-leading: 1.5;
-    --lg: 1.75rem;
-    --lg-leading: 1.25;
-    --xl: 2.5rem;
-    --xl-leading: 1.2;
+    --body-leading: 1.4;
+    --lg: 1.5rem;
+    --lg-leading: 1.3;
+    --xl: 1.85rem;
+    --xl-leading: 1.3;
 }
 /* Dark scheme */
 @media (prefers-color-scheme: dark) {
@@ -122,7 +124,7 @@
 
 /* UNIVERSAL */
 html {
-    @apply text-base font-sans text-foreground bg-background;
+    @apply text-base font-sans text-foreground bg-background font-[435] tracking-[-0.02em];
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -130,75 +132,60 @@ a {
     @apply hover:text-accent transition-fade;
 }
 button, a.button {
-    @apply all-caps decoration-0 px-1 pt-[calc(var(--spacer)*0.4)] pb-0.5 bg-foreground text-background rounded font-semibold! tracking-wider hover:bg-accent hover:text-white transition-fade inline-block!;
+    @apply decoration-0 px-0.75 pt-[calc(var(--spacer)*0.275)] pb-[calc(var(--spacer)*0.3)] bg-foreground text-background font-semibold! hover:bg-accent hover:text-white transition-fade inline-block!;
 
     &.disabled {
         @apply bg-foreground/20 pointer-events-none;
     }
 }
+strong {
+    @apply font-bold;
+}
 
 /* NAVIGATION */
 .navlink a {
-  font-variation-settings:
-    "wght" 450;
-  transition:
-    font-variation-settings 500ms cubic-bezier(.22,1,.36,1);
-
     &.current {
-        font-variation-settings:
-            "wght" 700;
-    }
-
-    &:hover {
-        font-variation-settings:
-            "wght" 900;
-    }
-}
-#logo a {
-  font-variation-settings:
-    "wght" 600;
-  transition:
-    font-variation-settings 500ms cubic-bezier(.22,1,.36,1);
-
-    &:hover {
-    font-variation-settings:
-        "wght" 900;
+        @apply font-semibold;
     }
 }
 
 /* HEADINGS */
 :is(h1,h2,h3,h4,h5,h6) {
-    @apply mb-1.5;
+    @apply mb-1;
+
+    .prose &:is(h1,h2,h3,h4,h5,h6) {
+        @apply mb-1.5;
+    }
 
     .prose &:has(+ :is(h1, h2, h3, h4, h5, h6)) {
-        @apply -mb-2.5!;
+        @apply -mb-2!;
     }
 }
 h1 {
-    @apply text-lg font-semibold;
+    @apply text-xl font-bold;
 
     .prose & {
-        @apply text-body font-semibold mt-3.5 mb-1;
+        @apply text-body font-bold mb-1;
+    }
+
+    .prose * + & {
+        @apply mt-3.5;
     }
 
     &.text-xl {
-        @apply text-xl font-medium text-balance;
+        @apply text-xl font-bold text-balance all-caps text-accent font-condensed;
     }
 
     header &, header & p {
-        @apply text-xl font-semibold text-accent mb-1! all-caps;
+        @apply text-xl font-bold text-accent font-condensed! mb-0.5! all-caps! tracking-normal!;
     }
 }
 h2 {
 
-    @apply text-balance;
+    @apply text-lg text-balance;
 
     .prose & {
-        @apply text-body font-medium mt-3.5 mb-1;
-    }
-
-    header &, header & p {
-        @apply text-xl font-normal!;
+        @apply text-body font-semibold mt-3.5 mb-1;
     }
 }
 h3 {
@@ -214,7 +201,31 @@ h3 {
     @apply text-body [&>:is(p,ul,ol,blockquote,aside,figure,img)+:is(p,ul,ol,blockquote,pullquote,aside,figure,img)]:mt-1.5;
 
     & a {
-        @apply underline decoration-wavy hover:text-accent transition-fade;
+        @apply underline decoration-wavy hover:text-accent transition-fade decoration-accent;
+    }
+
+    ul {
+        @apply list-disc pl-1.5;
+    }
+
+    ol {
+        @apply list-decimal pl-1.5;
+    }
+
+    hr {
+        @apply my-4 max-w-3 border-t-2 border-accent;
+    }
+
+    pre, code {
+        @apply font-mono;
+    }
+
+    code {
+        @apply font-[450]! text-foreground/60;
+    }
+
+    pre {
+        @apply my-2 whitespace-pre-wrap wrap-break-word;
     }
 }
 
@@ -244,4 +255,15 @@ h3 {
         }
     }
 
+}
+
+/* NOTICE CARD */
+.notice-card:has(a.heading-link:hover) .button.more-internal,
+.notice-card:has(.button.more-internal:hover) a.heading-link {
+    @apply text-accent;
+}
+
+.notice-card:has(.button.more-internal:hover) .button.more-internal,
+.notice-card:has(a.heading-link:hover) .button.more-internal {
+    @apply bg-accent text-white;
 }

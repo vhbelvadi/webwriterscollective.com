@@ -1,0 +1,22 @@
+# Hugo generated files
+/public/
+/resources/_gen/
+/hugo_stats.json
+
+# Hugo modules (if used)
+/go.sum
+/go.work.sum
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS files
+Thumbs.db

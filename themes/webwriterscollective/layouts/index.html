@@ -1,16 +1,16 @@
 {{ define "main" }}
-<div class="w-full p-1.5 text-center pb-6 mb-2 border-b border-foreground">
-    <h2 class="text-xl font-light! max-w-56 mx-auto leading-[1.2]! [&>p>strong]:font-medium!">{{ .Content }}</h2>
+<div class="w-full p-1 lg:p-1.5 text-center pb-7! mb-2 border-b border-foreground">
+    <h2 class="text-xl! lg:text-[3rem]! font-light! max-w-56 mx-auto leading-[1.2]! [&>p>strong]:font-medium!">{{ .Content }}</h2>
 </div>
 <main class="mx-auto">
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:divide-x divide-foreground">
       <!-- ANTHOLOGIES -->
       <div class="col-span-1 lg:pr-2">
         <header>
-            <h1>Anthologies</h1>
+            <a href="/anthologies"><h1>Anthologies</h1></a>
         </header>
         {{ with site.GetPage "section" "anthologies" }}
-            <div class="flex flex-col gap-2 col-span-1 mt-4">
+            <div class="flex flex-col gap-2 col-span-1 mt-2">
                 {{ partial "issue-card.html" (dict "context" . "size" "small-size" "issues" (first 1 (.Pages.ByParam "issue").Reverse) ) }}
             </div>
         {{ end}}
@@ -18,11 +18,11 @@
       <!-- NOTICEBOARD -->
       <div class="col-span-1 lg:col-span-2">
         <header>
-            <h1>Noticeboard</h1>
+            <a href="/noticeboard"><h1>Noticeboard</h1></a>
         </header>
         {{ with site.GetPage "section" "noticeboard" }}
-            <div class="mt-4">
-                {{ partial "notice.html" (dict "context" . "notices" (first 10 .RegularPages.ByDate.Reverse) ) }}
+            <div class="mt-2">
+                {{ partial "notice-card.html" (dict "context" . "notices" (first 10 .RegularPages.ByDate.Reverse) ) }}
             </div>
         {{ end }}
       </div>

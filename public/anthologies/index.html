@@ -18,23 +18,25 @@
 <body class="max-w-350 mx-auto">
   <div class="flex flex-row flex-wrap md:gap-4 items-start md:items-center justify-start md:justify-between max-md:divide-y divide-foreground border-b border-foreground mx-1.5">
     <div id="logo" class="max-md:w-full md:grow py-1">
-        <a href="/" class="all-caps text-base!">Web Writers’ Collective</a>
+        <a href="/" class="font-semibold!"><img src="/favicons/favicon.svg" width="18" class="mt-[-0.25rem] inline-block mr-0.5">Web Writers’ Collective</a>
     </div>
-    <nav id="menu" class="navlink max-md:w-full flex flex-row flex-wrap items-center gap-x-1.5 gap-y-0.5 justify-start md:justify-end py-1 all-caps tracking-wider! text-sm!">
+    <nav id="menu" class="navlink max-md:w-full flex flex-row flex-wrap items-center gap-x-1.5 gap-y-0.5 justify-start md:justify-end py-1">
         
-            
-                <a href="/anthologies/" class="current">Anthologies</a>
-            
-                <a href="/noticeboard/" class="">Noticeboard</a>
-            
+        
+            <a href="/anthologies/" class="current">Anthologies</a>
+        
+            <a href="/noticeboard/" class="">Noticeboard</a>
+        
 
-            
-                <a href="/about/" class="">About</a>
-            
+        
+        <a href="/authors" class="">Authors</a>
+
+        
+        <a href="/about" class="">About</a>
     </nav>
 </div>
 
-  <main class="mx-1.5 py-6">
+  <main class="mx-1 lg:mx-1.5 py-6">
       
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 items-stretch justify-between">
     <div class="col-span-1">
@@ -52,127 +54,15 @@
 
 
 
-    <div class="issue-card large-size border border-foreground flex flex-col lg:flex-row items-center justify-between gap-x-2 p-1.5 bg-offset">
+    <div class="issue-card large-size border border-foreground flex flex-col lg:flex-row items-stretch gap-y-1.5 justify-between gap-x-4 p-1 lg:p-1.5 bg-offset">
         <div class="flex flex-col items-start justify-start lg:justify-between lg:max-w-[30%] gap-x-2">
             <div>
-                <span class="all-caps text-accent block mb-0.25 font-bold">Issue 2</span>
-                <h2 class="text-xl font-light!">Sunshine and wallflowers</h2>
+                <span class="all-caps text-accent block mb-0.25 font-bold text-sm">Issue 1</span>
+                <span class="text-foreground/40 text-xl">Coming soon</span>
             </div>
-            <a href="/anthologies/2/" class="button">Read</a>
-        </div>
-        <div class="titles-list flex flex-col grow divide-y divide-foreground group/small:hidden border-y border-foreground">
-            
-                <a href="http://localhost:1313/anthologies/2/consectetur/" class="py-0.5 text-base"><span class="font-semibold">Consectetur adipiscing elit</span> <span>by
-                Author Two, Author Three and Author Four
-                </span></a>
-            
-                <a href="http://localhost:1313/anthologies/2/felis/" class="py-0.5 text-base"><span class="font-semibold">Felis placerat tempor</span> <span>by
-                Sylvia Plath and Author Two
-                </span></a>
             
         </div>
-        <div class="authors-list">
-            Featuring contributions by
-            
-
-            
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-            
-
-            
-
-            
-
-            
-
-            
-
-            Author Two, Sylvia Plath, Author Four&nbsp;and more.</div>
         
-    </div>
-
-    <div class="issue-card large-size border border-foreground flex flex-col lg:flex-row items-center justify-between gap-x-2 p-1.5 bg-offset">
-        <div class="flex flex-col items-start justify-start lg:justify-between lg:max-w-[30%] gap-x-2">
-            <div>
-                <span class="all-caps text-accent block mb-0.25 font-bold">Issue 1</span>
-                <h2 class="text-xl font-light!">Seven ways to solve a Rubik’s cube</h2>
-            </div>
-            <a href="/anthologies/1/" class="button">Read</a>
-        </div>
-        <div class="titles-list flex flex-col grow divide-y divide-foreground group/small:hidden border-y border-foreground">
-            
-                <a href="http://localhost:1313/anthologies/1/consectetur/" class="py-0.5 text-base"><span class="font-semibold">Consectetur adipiscing elit</span> <span>by
-                Author Two, Author Three and Author Four
-                </span></a>
-            
-                <a href="http://localhost:1313/anthologies/1/dolor-sit-amet/" class="py-0.5 text-base"><span class="font-semibold">Dolor sit amet</span> <span>by
-                Author Two, Author Three and Author Four
-                </span></a>
-            
-                <a href="http://localhost:1313/anthologies/1/felis/" class="py-0.5 text-base"><span class="font-semibold">Felis placerat tempor</span> <span>by
-                Sylvia Plath and Author Two
-                </span></a>
-            
-                <a href="http://localhost:1313/anthologies/1/lorem-ipsum/" class="py-0.5 text-base"><span class="font-semibold">Lorem ipsum dolor: sit amet sem consectetur</span> <span>by
-                Sylvia Plath and Author Two
-                </span></a>
-            
-        </div>
-        <div class="authors-list">
-            Featuring contributions by
-            
-
-            
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-            
-
-            
-
-            
-
-            
-
-            
-
-            Author Two, Sylvia Plath, Author Four&nbsp;and more.</div>
         
     </div>
 
@@ -185,10 +75,26 @@
 </div>
 
   </main>
-  <div id="footer">
-    <div class="w-8 border-t border-foreground/30 mx-auto block mb-4"></div>
-    <div id="copyright" class="text-sm text-foreground/40 text-center mb-4">
-        <a href="/">&copy; 2026 Web Writers’ Collective.</a> Rights to works published on this website belong to their respective authors.
+  <div id="footer" class="mx-1 lg:mx-1.5 *:py-2 grid grid-cols-3 gap-4 border-t border-foreground text-sm">
+    
+    <div class="col-span-3 md:col-span-2 flex flex-row gap-0.5 items-start justify-start">
+        <img src="/favicons/favicon.svg" width="15" class="mt-0.25">
+        <div class="max-w-lg text-balance select-none text-base">
+            <strong>Web Writers’ Collective</strong> is an invite-only community to discuss all things writing on the web: culture, technique, process, publishing and more. We also provide a space to collaborate on writing projects together, including <em>Anthologies</em> our community zine.
+        </div>
+    </div>
+
+    
+    <div class="col-span-3 md:col-span-1 flex flex-col gap-2 items-start justify-end">
+        <div class="flex flex-row flex-wrap gap-2 lg:flex-col lg:gap-0.5 items-start justify-start">
+            <a href="/community-guidelines">Community guidelines</a>
+            <a href="/editing-guide">Editing this website</a>
+        </div>
+
+        <div class="max-w-xs">
+            <a href="/">&copy; 2026 Web Writers’ Collective</a><br/>Rights to works published on this website belong to their respective authors. This website does not use AI.
+        </div>
+
     </div>
 </div>
 

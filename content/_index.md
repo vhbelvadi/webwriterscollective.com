@@ -1,4 +1,4 @@
 ---
 title: Web Writers’ Collective
 ---
-Welcome to the **Web Writers’ Collective** etc. (we need something succinct here)
+Web Writers’ Collective is a community for people who write on the web.

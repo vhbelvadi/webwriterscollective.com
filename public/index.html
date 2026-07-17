@@ -19,26 +19,28 @@
 <body class="max-w-350 mx-auto">
   <div class="flex flex-row flex-wrap md:gap-4 items-start md:items-center justify-start md:justify-between max-md:divide-y divide-foreground border-b border-foreground mx-1.5">
     <div id="logo" class="max-md:w-full md:grow py-1">
-        <a href="/" class="all-caps text-base!">Web Writers’ Collective</a>
+        <a href="/" class="font-semibold!"><img src="/favicons/favicon.svg" width="18" class="mt-[-0.25rem] inline-block mr-0.5">Web Writers’ Collective</a>
     </div>
-    <nav id="menu" class="navlink max-md:w-full flex flex-row flex-wrap items-center gap-x-1.5 gap-y-0.5 justify-start md:justify-end py-1 all-caps tracking-wider! text-sm!">
+    <nav id="menu" class="navlink max-md:w-full flex flex-row flex-wrap items-center gap-x-1.5 gap-y-0.5 justify-start md:justify-end py-1">
         
-            
-                <a href="/anthologies/" class="">Anthologies</a>
-            
-                <a href="/noticeboard/" class="">Noticeboard</a>
-            
+        
+            <a href="/anthologies/" class="">Anthologies</a>
+        
+            <a href="/noticeboard/" class="">Noticeboard</a>
+        
 
-            
-                <a href="/about/" class="">About</a>
-            
+        
+        <a href="/authors" class="">Authors</a>
+
+        
+        <a href="/about" class="">About</a>
     </nav>
 </div>
 
-  <main class="mx-1.5 py-6">
+  <main class="mx-1 lg:mx-1.5 py-6">
       
-<div class="w-full p-1.5 text-center pb-6 mb-2 border-b border-foreground">
-    <h2 class="text-xl font-light! max-w-56 mx-auto leading-[1.2]! [&>p>strong]:font-medium!"><p>Welcome to the <strong>Web Writers’ Collective</strong> etc. (we need something succinct here)</p>
+<div class="w-full p-1 lg:p-1.5 text-center pb-7! mb-2 border-b border-foreground">
+    <h2 class="text-xl! lg:text-[3rem]! font-light! max-w-56 mx-auto leading-[1.2]! [&>p>strong]:font-medium!"><p>Web Writers’ Collective is a community for people who write on the web.</p>
 </h2>
 </div>
 <main class="mx-auto">
@@ -46,64 +48,25 @@
       
       <div class="col-span-1 lg:pr-2">
         <header>
-            <h1>Anthologies</h1>
+            <a href="/anthologies"><h1>Anthologies</h1></a>
         </header>
         
-            <div class="flex flex-col gap-2 col-span-1 mt-4">
+            <div class="flex flex-col gap-2 col-span-1 mt-2">
                 
 
 
 
 
-    <div class="issue-card small-size border border-foreground flex flex-col items-start justify-between gap-x-2 p-1.5 bg-offset">
+    <div class="issue-card small-size border border-foreground flex flex-col  items-start  justify-between gap-x-4 p-1 lg:p-1.5 bg-offset">
         <div class="flex flex-col items-start justify-start  gap-x-2">
             <div>
-                <span class="all-caps text-accent block mb-0.25 font-bold">Issue 2</span>
-                <h2 class="text-xl font-light!">Sunshine and wallflowers</h2>
+                <span class="all-caps text-accent block mb-0.25 font-bold text-sm">Issue 1</span>
+                <span class="text-foreground/40 text-xl">Coming soon</span>
             </div>
             
         </div>
-        <div class="titles-list flex flex-col grow divide-y divide-foreground group/small:hidden border-y border-foreground">
-            
-                <a href="http://localhost:1313/anthologies/2/consectetur/" class="py-0.5 text-base"><span class="font-semibold">Consectetur adipiscing elit</span> <span>by
-                Author Two, Author Three and Author Four
-                </span></a>
-            
-                <a href="http://localhost:1313/anthologies/2/felis/" class="py-0.5 text-base"><span class="font-semibold">Felis placerat tempor</span> <span>by
-                Sylvia Plath and Author Two
-                </span></a>
-            
-        </div>
-        <div class="authors-list">
-            Featuring contributions by
-            
-
-            
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-            
-
-            
-
-            
-
-            
-
-            
-
-            Author Three, Author Two, Sylvia Plath&nbsp;and more.</div>
-        <a href="/anthologies/2/" class="button mt-2">Read</a>
+        
+        
     </div>
 
 
@@ -113,81 +76,103 @@
       
       <div class="col-span-1 lg:col-span-2">
         <header>
-            <h1>Noticeboard</h1>
+            <a href="/noticeboard"><h1>Noticeboard</h1></a>
         </header>
         
-            <div class="mt-4">
+            <div class="mt-2">
                 <div class="w-full flex flex-row flex-wrap gap-2 items-start">
     
 
     
 
     
-        <div class="border border-foreground bg-offset w-full lg:w-[calc(50%-calc(var(--spacer)))]">
+        <div class="notice-card border border-foreground bg-offset w-full lg:w-[calc(50%-calc(var(--spacer)))]">
             
             <div class="p-1.5">
-                <h2 class="text-lg font-medium mb-0.25!">
-                    Here is yet another notice
-                </h2>
-                
-                    <h3 class="text-lg font-normal! text-foreground/40 mb-0.5!">Of another fun little project you might want to join</h3>
-                
+                <a href="/noticeboard/hwc-upcoming/" class="heading-link text-lg font-medium mb-0.25!">
+                    HWC Writing Edition
+                    
+                        <h3 class="font-normal! text-balance text-foreground/40 mt-0.25! mb-0.5!">Get involved in the Homebrew Website Club</h3>
+                    
+                </a>
 
-                <div class="block w-3 border-t border-foreground my-2"></div>
-
-                
-                
-                    <p class="mb-1!">
-                        <a href="/authors/author-two/">Author Two</a>&nbsp;and&nbsp;<a href="/authors/author-three/">Author Three</a> <span class="text-foreground/50">– 16 July 2026</span>
-                    </p>
-                
+                <div class="block w-2 border-t-2 border-foreground my-2"></div>
 
                 <div class="prose">
-                    Maecenas interdum nunc magna, non blandit tortor accumsan non. Ut eleifend, sem scelerisque porttitor tincidunt.
+                    Meet the community every two months and chat about all things writing on the web.
                 </div>
 
                 
-                <div class="flex flex-row flex-wrap gap-x-1.5 gap-y-1 mt-2">
-                    <a href="/noticeboard/second-notice/" class="button">More</a>
-                    <a href="https://www.indieweb.org" class="button">View on indieweb.org</a>
+                
+                    <p class="mt-1!">
+                        <a href="/authors/james-g./">James G.</a> <br/><span class="text-foreground/40">17 July 2026</span>
+                    </p>
+                
+
+                
+                <div class="flex flex-row flex-wrap gap-x-1 gap-y-1 mt-2">
+                    <a href="/noticeboard/hwc-upcoming/" class="button more-internal">More</a>
+                    <a href="https://events.indieweb.org/tag/writing" class="button more-external">View on events.indieweb.org &nearr;</a>
                 </div>
             </div>
         </div>
     
-        <div class="border border-foreground bg-offset w-full lg:w-[calc(50%-calc(var(--spacer)))]">
-            
-            <div class="aspect-4/3">
-              <img
-                src="/noticeboard/first-notice/sample.webp"
-                alt=""
-                class="w-full h-full object-cover">
-            </div>
+        <div class="notice-card border border-foreground bg-offset w-full lg:w-[calc(50%-calc(var(--spacer)))]">
             
             <div class="p-1.5">
-                <h2 class="text-lg font-medium mb-0.25!">
-                    This is a notice
-                </h2>
-                
-                    <h3 class="text-lg font-normal! text-foreground/40 mb-0.5!">An exciting new project is underway</h3>
-                
+                <a href="/noticeboard/repeat-that/" class="heading-link text-lg font-medium mb-0.25!">
+                    ‘Repeat that, repeat’ challenge
+                    
+                        <h3 class="font-normal! text-balance text-foreground/40 mt-0.25! mb-0.5!">A collaborative writing project</h3>
+                    
+                </a>
 
-                <div class="block w-3 border-t border-foreground my-2"></div>
-
-                
-                
-                    <p class="mb-1!">
-                        <a href="/authors/author-three/">Author Three</a>&nbsp;and&nbsp;<a href="/authors/sylvia-plath/">Sylvia Plath</a> <span class="text-foreground/50">– 14 July 2026</span>
-                    </p>
-                
+                <div class="block w-2 border-t-2 border-foreground my-2"></div>
 
                 <div class="prose">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ultrices posuere.
+                    Ruben and James started a collaborative writing challenge that invites readers to share their thoughts on the poem ‘Repeat that, repeat’ by Gerard Manley Hopkins.
                 </div>
 
                 
-                <div class="flex flex-row flex-wrap gap-x-1.5 gap-y-1 mt-2">
-                    <a href="/noticeboard/first-notice/" class="button">More</a>
-                    <a href="https://www.jamesg.blog" class="button">View on jamesg.blog</a>
+                
+                    <p class="mt-1!">
+                        <a href="/authors/james-g./">James G.</a>&nbsp;and&nbsp;<a href="/authors/ruben-verweij/">Ruben Verweij</a> <br/><span class="text-foreground/40">17 July 2026</span>
+                    </p>
+                
+
+                
+                <div class="flex flex-row flex-wrap gap-x-1 gap-y-1 mt-2">
+                    <a href="/noticeboard/repeat-that/" class="button more-internal">More</a>
+                    <a href="https://jamesg.blog/2026/07/13/repeat-that-repeat" class="button more-external">View on jamesg.blog &nearr;</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="notice-card border border-foreground bg-offset w-full lg:w-[calc(50%-calc(var(--spacer)))]">
+            
+            <div class="p-1.5">
+                <a href="/noticeboard/join-wwc/" class="heading-link text-lg font-medium mb-0.25!">
+                    Express your interest in WWC
+                    
+                </a>
+
+                <div class="block w-2 border-t-2 border-foreground my-2"></div>
+
+                <div class="prose">
+                    Find out more about joining our positive, constructive and inclusive community.
+                </div>
+
+                
+                
+                    <p class="mt-1!">
+                        <a href="/authors/james-g./">James G.</a>&nbsp;and&nbsp;<a href="/authors/v.h.-belvadi/">V.H. Belvadi</a> <br/><span class="text-foreground/40">17 July 2026</span>
+                    </p>
+                
+
+                
+                <div class="flex flex-row flex-wrap gap-x-1 gap-y-1 mt-2">
+                    <a href="/noticeboard/join-wwc/" class="button more-internal">More</a>
+                    
                 </div>
             </div>
         </div>
@@ -201,10 +186,26 @@
 </main>
 
   </main>
-  <div id="footer">
-    <div class="w-8 border-t border-foreground/30 mx-auto block mb-4"></div>
-    <div id="copyright" class="text-sm text-foreground/40 text-center mb-4">
-        <a href="/">&copy; 2026 Web Writers’ Collective.</a> Rights to works published on this website belong to their respective authors.
+  <div id="footer" class="mx-1 lg:mx-1.5 *:py-2 grid grid-cols-3 gap-4 border-t border-foreground text-sm">
+    
+    <div class="col-span-3 md:col-span-2 flex flex-row gap-0.5 items-start justify-start">
+        <img src="/favicons/favicon.svg" width="15" class="mt-0.25">
+        <div class="max-w-lg text-balance select-none text-base">
+            <strong>Web Writers’ Collective</strong> is an invite-only community to discuss all things writing on the web: culture, technique, process, publishing and more. We also provide a space to collaborate on writing projects together, including <em>Anthologies</em> our community zine.
+        </div>
+    </div>
+
+    
+    <div class="col-span-3 md:col-span-1 flex flex-col gap-2 items-start justify-end">
+        <div class="flex flex-row flex-wrap gap-2 lg:flex-col lg:gap-0.5 items-start justify-start">
+            <a href="/community-guidelines">Community guidelines</a>
+            <a href="/editing-guide">Editing this website</a>
+        </div>
+
+        <div class="max-w-xs">
+            <a href="/">&copy; 2026 Web Writers’ Collective</a><br/>Rights to works published on this website belong to their respective authors. This website does not use AI.
+        </div>
+
     </div>
 </div>
 

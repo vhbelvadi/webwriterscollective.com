@@ -5,58 +5,60 @@
 {{ end }}
 
 {{ range $issues }}
-    <div class="issue-card {{ $.size }} border border-foreground flex flex-col {{ if ne $.size "small-size" }}lg:flex-row items-center{{ else }}items-start{{ end }} justify-between gap-x-2 p-1.5 bg-offset">
+    <div class="issue-card {{ $.size }} border border-foreground flex flex-col {{ if ne $.size "small-size" }}lg:flex-row items-stretch gap-y-1.5{{ else }} items-start {{ end }} justify-between gap-x-4 p-1 lg:p-1.5 bg-offset">
         <div class="flex flex-col items-start justify-start {{ if ne $.size "small-size" }}lg:justify-between lg:max-w-[30%]{{ end }} gap-x-2">
             <div>
-                <span class="all-caps text-accent block mb-0.25 font-bold">Issue {{ .Params.issue }}</span>
-                <h2 class="text-xl font-light!">{{ .Title }}</h2>
+                <span class="all-caps text-accent block mb-0.25 font-bold text-sm">Issue {{ .Params.issue }}</span>
+                {{ if ne .Title "Coming soon" }}<a href="{{ .RelPermalink }}"><h2 class="text-xl font-light!">{{ .Title }}</h2></a>{{ else }}<span class="text-foreground/40 text-xl">{{ .Title }}</span>{{ end }}
             </div>
-            {{ if ne $.size "small-size" }}<a href="{{ .RelPermalink }}" class="button">Read</a>{{ end }}
+            {{ if gt .RegularPages.Len 0 }}{{ if ne $.size "small-size" }}<a href="{{ .RelPermalink }}" class="button">Read</a>{{ end }}{{ end }}
         </div>
-        <div class="titles-list flex flex-col grow divide-y divide-foreground group/small:hidden border-y border-foreground">
-            {{ range .RegularPages }}
-                <a href="{{ .Permalink }}" class="py-0.5 text-base"><span class="font-semibold">{{ .Title }}</span> <span>by
-                {{ $last := sub (len .Params.authors) 1 }}
-                {{- range $i, $author := .Params.authors -}}
+        {{ if gt .RegularPages.Len 0 }}
+            <div class="titles-list flex flex-col grow divide-y divide-foreground group/small:hidden border-y border-foreground">
+                {{ range .RegularPages }}
+                    <a href="{{ .Permalink }}" class="py-0.5 text-base"><span class="font-semibold">{{ .Title }}</span> <span>by
+                    {{ $last := sub (len .Params.authors) 1 }}
+                    {{- range $i, $author := .Params.authors -}}
+                        {{- if gt $i 0 -}}
+                            {{ if eq $i $last }} and {{ else }}, {{ end }}
+                        {{- end -}}
+                        {{- $author -}}
+                    {{ end }}
+                    </span></a>
+                {{ end }}
+            </div>
+            <div class="authors-list">
+                Featuring contributions by
+                {{ $authors := slice }}
+
+                {{ range .RegularPages }}
+                    {{ range .Params.authors }}
+                        {{ $authors = $authors | append . }}
+                    {{ end }}
+                {{ end }}
+
+                {{ $authors = $authors | uniq }}
+
+                {{ $authorsHidden := gt (len $authors) 3 }}
+
+                {{ $authors = $authors | shuffle | first 3 }}
+
+                {{ $last := sub (len $authors) 1 }}
+
+                {{ range $i, $author := $authors }}
                     {{- if gt $i 0 -}}
-                        {{ if eq $i $last }} and {{ else }}, {{ end }}
+                        {{- if and (eq $i $last) (not $authorsHidden) -}}
+                            {{ " and " }}
+                        {{- else -}}
+                            {{ ", " }}
+                        {{- end -}}
                     {{- end -}}
                     {{- $author -}}
                 {{ end }}
-                </span></a>
-            {{ end }}
-        </div>
-        <div class="authors-list">
-            Featuring contributions by
-            {{ $authors := slice }}
 
-            {{ range .RegularPages }}
-                {{ range .Params.authors }}
-                    {{ $authors = $authors | append . }}
-                {{ end }}
-            {{ end }}
-
-            {{ $authors = $authors | uniq }}
-
-            {{ $authorsHidden := gt (len $authors) 3 }}
-
-            {{ $authors = $authors | shuffle | first 3 }}
-
-            {{ $last := sub (len $authors) 1 }}
-
-            {{ range $i, $author := $authors }}
-                {{- if gt $i 0 -}}
-                    {{- if and (eq $i $last) (not $authorsHidden) -}}
-                        {{ " and " }}
-                    {{- else -}}
-                        {{ ", " }}
-                    {{- end -}}
-                {{- end -}}
-                {{- $author -}}
-            {{ end }}
-
-            {{- if $authorsHidden -}}&nbsp;and more.{{- else -}}.{{- end -}}
-        </div>
-        {{ if eq $.size "small-size" }}<a href="{{ .RelPermalink }}" class="button mt-2">Read</a>{{ end }}
+                {{- if $authorsHidden -}}&nbsp;and more.{{- else -}}.{{- end -}}
+            </div>
+        {{ end }}
+        {{ if gt .RegularPages.Len 0 }}{{ if eq $.size "small-size" }}<a href="{{ .RelPermalink }}" class="button mt-2">Read</a>{{ end }}{{ end }}
     </div>
 {{ end }}

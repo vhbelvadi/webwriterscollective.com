@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Our authors on Web Writers’ Collective</title>
+    <title>Authors on Web Writers’ Collective</title>
     <link>http://localhost:1313/authors/</link>
-    <description>Recent content in Our authors on Web Writers’ Collective</description>
+    <description>Recent content in Authors on Web Writers’ Collective</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Jul 2026 16:31:58 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 18:53:08 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Author Three</title>
-      <link>http://localhost:1313/authors/author-three/</link>
-      <pubDate>Thu, 16 Jul 2026 16:31:58 +0100</pubDate>
-      <guid>http://localhost:1313/authors/author-three/</guid>
+      <title>James G.</title>
+      <link>http://localhost:1313/authors/james-g./</link>
+      <pubDate>Fri, 17 Jul 2026 18:53:08 +0100</pubDate>
+      <guid>http://localhost:1313/authors/james-g./</guid>
       <description></description>
     </item>
     <item>
-      <title>Author Two</title>
-      <link>http://localhost:1313/authors/author-two/</link>
-      <pubDate>Thu, 16 Jul 2026 16:31:58 +0100</pubDate>
-      <guid>http://localhost:1313/authors/author-two/</guid>
+      <title>Ruben Verweij</title>
+      <link>http://localhost:1313/authors/ruben-verweij/</link>
+      <pubDate>Fri, 17 Jul 2026 18:46:58 +0100</pubDate>
+      <guid>http://localhost:1313/authors/ruben-verweij/</guid>
       <description></description>
     </item>
     <item>
-      <title>Sylvia Plath</title>
-      <link>http://localhost:1313/authors/sylvia-plath/</link>
-      <pubDate>Tue, 14 Jul 2026 23:44:14 +0100</pubDate>
-      <guid>http://localhost:1313/authors/sylvia-plath/</guid>
+      <title>V.H. Belvadi</title>
+      <link>http://localhost:1313/authors/v.h.-belvadi/</link>
+      <pubDate>Fri, 17 Jul 2026 18:25:00 +0100</pubDate>
+      <guid>http://localhost:1313/authors/v.h.-belvadi/</guid>
       <description></description>
     </item>
     <item>
-      <title>Author Four</title>
-      <link>http://localhost:1313/authors/author-four/</link>
-      <pubDate>Tue, 14 Jul 2026 08:32:08 +0100</pubDate>
-      <guid>http://localhost:1313/authors/author-four/</guid>
+      <title>James G</title>
+      <link>http://localhost:1313/authors/james-g/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/authors/james-g/</guid>
       <description></description>
     </item>
   </channel>

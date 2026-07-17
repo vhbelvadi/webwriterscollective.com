@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article class="flex flex-col lg:flex-row items-start justify-between gap-2">
+<article class="flex flex-col lg:flex-row items-start justify-between gap-x-6 gap-y-4">
     <header class="basis-[30%]">
       <h1>{{ .Title }}</h1>
 
@@ -8,17 +8,17 @@
       {{ end }}
 
       {{ with .Params.authors }}
-        <p class="mt-1.5">
+        <p class="mt-1">
           By {{ partial "authors.html" . }}
         </p>
       {{ end }}
     </header>
-    <div class="basis-[45%] prose max-w-(--article-width)">
+    <div class="basis-[45%] prose w-(--article-width) max-w-full">
         {{ with .Resources.GetMatch .Params.cover }}
           <img
             src="{{ .RelPermalink }}"
             alt="{{ $.Title }}"
-            class="mb-2.5 rounded-sm w-full">
+            class="mb-2.5 w-full">
         {{ end }}
         {{ .Content }}
     </div>

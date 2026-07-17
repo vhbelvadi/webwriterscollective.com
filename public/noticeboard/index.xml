@@ -6,21 +6,28 @@
     <description>Recent content in Noticeboard on Web Writers’ Collective</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Jul 2026 16:31:58 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 18:53:08 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/noticeboard/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Here is yet another notice</title>
-      <link>http://localhost:1313/noticeboard/second-notice/</link>
-      <pubDate>Thu, 16 Jul 2026 16:31:58 +0100</pubDate>
-      <guid>http://localhost:1313/noticeboard/second-notice/</guid>
-      <description>Maecenas interdum nunc magna, non blandit tortor accumsan non. Ut eleifend, sem scelerisque porttitor tincidunt.</description>
+      <title>HWC Writing Edition</title>
+      <link>http://localhost:1313/noticeboard/hwc-upcoming/</link>
+      <pubDate>Fri, 17 Jul 2026 18:53:08 +0100</pubDate>
+      <guid>http://localhost:1313/noticeboard/hwc-upcoming/</guid>
+      <description>Meet the community every two months and chat about all things writing on the web.</description>
     </item>
     <item>
-      <title>This is a notice</title>
-      <link>http://localhost:1313/noticeboard/first-notice/</link>
-      <pubDate>Tue, 14 Jul 2026 23:44:14 +0100</pubDate>
-      <guid>http://localhost:1313/noticeboard/first-notice/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ultrices posuere.</description>
+      <title>‘Repeat that, repeat’ challenge</title>
+      <link>http://localhost:1313/noticeboard/repeat-that/</link>
+      <pubDate>Fri, 17 Jul 2026 18:46:58 +0100</pubDate>
+      <guid>http://localhost:1313/noticeboard/repeat-that/</guid>
+      <description>Ruben and James started a collaborative writing challenge that invites readers to share their thoughts on the poem ‘Repeat that, repeat’ by Gerard Manley Hopkins.</description>
+    </item>
+    <item>
+      <title>Express your interest in WWC</title>
+      <link>http://localhost:1313/noticeboard/join-wwc/</link>
+      <pubDate>Fri, 17 Jul 2026 18:25:00 +0100</pubDate>
+      <guid>http://localhost:1313/noticeboard/join-wwc/</guid>
+      <description>Find out more about joining our positive, constructive and inclusive community.</description>
     </item>
   </channel>
 </rss>

@@ -4,17 +4,17 @@
       <h1>{{ .Title }}</h1>
 
       {{ with .Params.bio }}
-        <div class="text-body mb-1.5">{{ . }}</div>
+        <div class="text-body">{{ . }}</div>
       {{ end }}
 
       {{ with .Params.website }}
-        <a href="{{ . }}" class="button">{{ $.Params.name }}’s website</a>
+        <a href="{{ . }}" class="button mt-1.5">{{ $.Params.name | default $.Title }}’s website</a>
       {{ end }}
     </header>
-    <div class="basis-[50%] max-w-(--article-width)">
+    <div class="basis-[50%] w-(--article-width) max-w-full">
         <div class="flex flex-col gap-2">
             {{ range .Pages.ByDate.Reverse }}
-                <div class="block post-list-item w-full group hover:text-foreground! p-1.5 bg-offset border border-foreground">
+                <div class="block post-list-item w-full group hover:text-foreground! p-1 lg:p-1.5 bg-offset border border-foreground">
                     <h2 class="text-lg font-medium! mb-0! transition-fade">{{ .Title }}</h2>
                     <div class="text-lg text-foreground/40 font-normal! mb-1!">{{ .Params.subtitle }}</div>
 

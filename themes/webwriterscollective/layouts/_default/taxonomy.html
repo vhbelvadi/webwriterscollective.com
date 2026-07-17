@@ -1,0 +1,24 @@
+{{ define "main" }}
+<main class="flex flex-col items-start justify-between gap-2">
+    <header>
+      <h1>{{ .Title }}</h1>
+
+      {{ with .Params.bio }}
+        <div class="text-body mb-1.5">{{ . }}</div>
+      {{ end }}
+
+      {{ with .Params.website }}
+        <a href="{{ . }}" class="button">{{ $.Params.name }}’s website</a>
+      {{ end }}
+    </header>
+    <div class="text-xl">
+        {{- $authors := slice -}}
+
+        {{- range sort .Site.Taxonomies.authors "Page.Title" -}}
+            {{- $authors = $authors | append .Page.Title -}}
+        {{- end -}}
+
+        {{- partial "authors.html" $authors -}}.
+    </div>
+</main>
+{{ end }}

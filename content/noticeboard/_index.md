@@ -1,4 +1,5 @@
 ---
 title: "Noticeboard"
+order: 2
 ---
-Join or learn about interesting projects across the IndieWeb
+Explore projects made and shared by our members

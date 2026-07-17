@@ -6,70 +6,49 @@
     <description>Recent content on Web Writers’ Collective</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Jul 2026 16:31:58 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 20:33:07 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Here is yet another notice</title>
-      <link>http://localhost:1313/noticeboard/second-notice/</link>
-      <pubDate>Thu, 16 Jul 2026 16:31:58 +0100</pubDate>
-      <guid>http://localhost:1313/noticeboard/second-notice/</guid>
-      <description>Maecenas interdum nunc magna, non blandit tortor accumsan non. Ut eleifend, sem scelerisque porttitor tincidunt.</description>
+      <title>Editing guide</title>
+      <link>http://localhost:1313/editing-guide/</link>
+      <pubDate>Fri, 17 Jul 2026 20:33:07 +0100</pubDate>
+      <guid>http://localhost:1313/editing-guide/</guid>
+      <description>&lt;p&gt;This guide is intended for existing members of WWC who may wish to edit this website for the following reasons:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;to post a notice to the noticeboard&lt;/li&gt;&#xA;&lt;li&gt;to submit their contribution to &lt;em&gt;Anthologies&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;to update their author bio and website&lt;/li&gt;&#xA;&lt;li&gt;to help fix typos or make minor improvements across this website&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h1 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h1&gt;&#xA;&lt;p&gt;A basic knowledge of git, or at least navigating around Github, is expected. If you do not believe you can continue with this, please feel free to send your contributions, or editing requests &lt;a href=&#34;mailto:hello@vhbelvadi.com&#34;&gt;via email&lt;/a&gt;. While we cannot promise to update the website right away, we will try our best to do so as quickly as possible. However, please continue to read this guide as it will tell you what sort of document you need to send our way.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>This is a notice</title>
-      <link>http://localhost:1313/noticeboard/first-notice/</link>
-      <pubDate>Tue, 14 Jul 2026 23:44:14 +0100</pubDate>
-      <guid>http://localhost:1313/noticeboard/first-notice/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ultrices posuere.</description>
+      <title>Community guidelines</title>
+      <link>http://localhost:1313/community-guidelines/</link>
+      <pubDate>Fri, 17 Jul 2026 20:25:21 +0100</pubDate>
+      <guid>http://localhost:1313/community-guidelines/</guid>
+      <description>&lt;h1 id=&#34;code-of-conduct&#34;&gt;Code of conduct&lt;/h1&gt;&#xA;&lt;p&gt;Since we are a new community, we don&amp;rsquo;t have a code of conduct on this site yet. With that said, we operate under IndieWeb Code of Conduct.&lt;/p&gt;&#xA;&lt;p&gt;If you would like to raise a potential violation of the code of conduct, please contact James in the Signal group.&lt;/p&gt;&#xA;&lt;p&gt;Anyone found in violation of the Code of Conduct will be removed from the group.&lt;/p&gt;&#xA;&lt;h1 id=&#34;talking-about-discussions&#34;&gt;Talking about discussions&lt;/h1&gt;&#xA;&lt;p&gt;Writing can be an intimite topic: discussing things like writers block, ideas we&amp;rsquo;re developing, and much more can make us feel vulnerable.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HWC Writing Edition</title>
+      <link>http://localhost:1313/noticeboard/hwc-upcoming/</link>
+      <pubDate>Fri, 17 Jul 2026 18:53:08 +0100</pubDate>
+      <guid>http://localhost:1313/noticeboard/hwc-upcoming/</guid>
+      <description>Meet the community every two months and chat about all things writing on the web.</description>
+    </item>
+    <item>
+      <title>‘Repeat that, repeat’ challenge</title>
+      <link>http://localhost:1313/noticeboard/repeat-that/</link>
+      <pubDate>Fri, 17 Jul 2026 18:46:58 +0100</pubDate>
+      <guid>http://localhost:1313/noticeboard/repeat-that/</guid>
+      <description>Ruben and James started a collaborative writing challenge that invites readers to share their thoughts on the poem ‘Repeat that, repeat’ by Gerard Manley Hopkins.</description>
+    </item>
+    <item>
+      <title>Express your interest in WWC</title>
+      <link>http://localhost:1313/noticeboard/join-wwc/</link>
+      <pubDate>Fri, 17 Jul 2026 18:25:00 +0100</pubDate>
+      <guid>http://localhost:1313/noticeboard/join-wwc/</guid>
+      <description>Find out more about joining our positive, constructive and inclusive community.</description>
     </item>
     <item>
       <title>About our collective</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Tue, 14 Jul 2026 10:41:21 +0100</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ultrices posuere. Maecenas interdum nunc magna, non blandit tortor accumsan non. Ut eleifend, sem scelerisque porttitor tincidunt, magna quam efficitur quam, non mattis ipsum ex nec orci. Maecenas ac dolor ac felis placerat tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat lorem vitae lacus cursus blandit. Curabitur at est tincidunt, posuere metus mattis, interdum elit.&lt;/p&gt;&#xA;&lt;p&gt;Donec iaculis velit diam, at ultrices dolor pretium at. Integer faucibus et eros vitae faucibus. Maecenas in mauris ac metus pharetra rutrum. Sed eu tincidunt quam, quis auctor leo. Morbi laoreet, mi sed dignissim tempor, ligula velit elementum dolor, a mollis lorem mauris cursus tellus.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Consectetur adipiscing elit</title>
-      <link>http://localhost:1313/anthologies/1/consectetur/</link>
-      <pubDate>Tue, 14 Jul 2026 08:32:08 +0100</pubDate>
-      <guid>http://localhost:1313/anthologies/1/consectetur/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ultrices posuere. Maecenas interdum nunc magna, non blandit tortor accumsan non. Ut eleifend, sem scelerisque porttitor tincidunt, magna quam efficitur quam, non mattis ipsum ex nec orci. Maecenas ac dolor ac felis placerat tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat lorem vitae lacus cursus blandit. Curabitur at est tincidunt, posuere metus mattis, interdum elit. Donec iaculis velit diam, at ultrices dolor pretium at. Integer faucibus et eros vitae faucibus. Maecenas in mauris ac metus pharetra rutrum. Sed eu tincidunt quam, quis auctor leo. Morbi laoreet, mi sed dignissim tempor, ligula velit elementum dolor, a mollis lorem mauris cursus tellus.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Consectetur adipiscing elit</title>
-      <link>http://localhost:1313/anthologies/2/consectetur/</link>
-      <pubDate>Tue, 14 Jul 2026 08:32:08 +0100</pubDate>
-      <guid>http://localhost:1313/anthologies/2/consectetur/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ultrices posuere. Maecenas interdum nunc magna, non blandit tortor accumsan non. Ut eleifend, sem scelerisque porttitor tincidunt, magna quam efficitur quam, non mattis ipsum ex nec orci. Maecenas ac dolor ac felis placerat tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat lorem vitae lacus cursus blandit. Curabitur at est tincidunt, posuere metus mattis, interdum elit. Donec iaculis velit diam, at ultrices dolor pretium at. Integer faucibus et eros vitae faucibus. Maecenas in mauris ac metus pharetra rutrum. Sed eu tincidunt quam, quis auctor leo. Morbi laoreet, mi sed dignissim tempor, ligula velit elementum dolor, a mollis lorem mauris cursus tellus.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Dolor sit amet</title>
-      <link>http://localhost:1313/anthologies/1/dolor-sit-amet/</link>
-      <pubDate>Tue, 14 Jul 2026 08:32:08 +0100</pubDate>
-      <guid>http://localhost:1313/anthologies/1/dolor-sit-amet/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ultrices posuere. Maecenas interdum nunc magna, non blandit tortor accumsan non. Ut eleifend, sem scelerisque porttitor tincidunt, magna quam efficitur quam, non mattis ipsum ex nec orci. Maecenas ac dolor ac felis placerat tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat lorem vitae lacus cursus blandit. Curabitur at est tincidunt, posuere metus mattis, interdum elit. Donec iaculis velit diam, at ultrices dolor pretium at. Integer faucibus et eros vitae faucibus. Maecenas in mauris ac metus pharetra rutrum. Sed eu tincidunt quam, quis auctor leo. Morbi laoreet, mi sed dignissim tempor, ligula velit elementum dolor, a mollis lorem mauris cursus tellus.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Felis placerat tempor</title>
-      <link>http://localhost:1313/anthologies/1/felis/</link>
-      <pubDate>Mon, 13 Jul 2026 16:25:31 +0100</pubDate>
-      <guid>http://localhost:1313/anthologies/1/felis/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ultrices posuere. Maecenas interdum nunc magna, non blandit tortor accumsan non. Ut eleifend, sem scelerisque porttitor tincidunt, magna quam efficitur quam, non mattis ipsum ex nec orci. Maecenas ac dolor ac felis placerat tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat lorem vitae lacus cursus blandit. Curabitur at est tincidunt, posuere metus mattis, interdum elit. Donec iaculis velit diam, at ultrices dolor pretium at. Integer faucibus et eros vitae faucibus. Maecenas in mauris ac metus pharetra rutrum. Sed eu tincidunt quam, quis auctor leo. Morbi laoreet, mi sed dignissim tempor, ligula velit elementum dolor, a mollis lorem mauris cursus tellus.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Felis placerat tempor</title>
-      <link>http://localhost:1313/anthologies/2/felis/</link>
-      <pubDate>Mon, 13 Jul 2026 16:24:31 +0100</pubDate>
-      <guid>http://localhost:1313/anthologies/2/felis/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ultrices posuere. Maecenas interdum nunc magna, non blandit tortor accumsan non. Ut eleifend, sem scelerisque porttitor tincidunt, magna quam efficitur quam, non mattis ipsum ex nec orci. Maecenas ac dolor ac felis placerat tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat lorem vitae lacus cursus blandit. Curabitur at est tincidunt, posuere metus mattis, interdum elit. Donec iaculis velit diam, at ultrices dolor pretium at. Integer faucibus et eros vitae faucibus. Maecenas in mauris ac metus pharetra rutrum. Sed eu tincidunt quam, quis auctor leo. Morbi laoreet, mi sed dignissim tempor, ligula velit elementum dolor, a mollis lorem mauris cursus tellus.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Lorem ipsum dolor: sit amet sem consectetur</title>
-      <link>http://localhost:1313/anthologies/1/lorem-ipsum/</link>
-      <pubDate>Mon, 13 Jul 2026 16:24:31 +0100</pubDate>
-      <guid>http://localhost:1313/anthologies/1/lorem-ipsum/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ultrices posuere. Maecenas interdum nunc magna, non blandit tortor accumsan non. Ut eleifend, sem scelerisque porttitor tincidunt, magna quam efficitur quam, non mattis ipsum ex nec orci. Maecenas ac dolor ac felis placerat tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat lorem vitae lacus cursus blandit. Curabitur at est tincidunt, posuere metus mattis, interdum elit.&lt;/p&gt;&#xA;&lt;p&gt;Donec iaculis velit diam, at ultrices dolor pretium at. Integer faucibus et eros vitae faucibus. Maecenas in mauris ac metus pharetra rutrum. Sed eu tincidunt quam, quis auctor leo. Morbi laoreet, mi sed dignissim tempor, ligula velit elementum dolor, a mollis lorem mauris cursus tellus.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;who-we-are&#34;&gt;Who we are&lt;/h1&gt;&#xA;&lt;p&gt;Web Writers Collective (WWC) is a Signal group for people who write on the web to chat about the culture of writing on the web, and to connect with (and maybe even collaborate with) like-minded writers.&lt;/p&gt;&#xA;&lt;p&gt;If you are interested in writing, or who actively write, on the web, you may like WWC.&lt;/p&gt;&#xA;&lt;h1 id=&#34;what-we-do&#34;&gt;What we do&lt;/h1&gt;&#xA;&lt;p&gt;You might join the group to talk about—&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Writing projects you’re working on that you would like feedback on&lt;/li&gt;&#xA;&lt;li&gt;The culture of writing on the web: what to share, how to share, who to share with&lt;/li&gt;&#xA;&lt;li&gt;Working through a specific challenge, i.e. how to articulate an idea, finding inspiration, working through writer’s block.&lt;/li&gt;&#xA;&lt;li&gt;Community events you’re participating in, i.e. the Bear Blog Carnival.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;We especially welcome people who write fiction, stories, creative non-fiction, poetry, life writing, personal blog posts, and everything in between.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

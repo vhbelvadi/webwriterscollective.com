@@ -10,7 +10,7 @@
 
     <div class="col-span-1 lg:col-span-2">
         {{ $paginator := .Paginate (.RegularPages.ByDate.Reverse) 15 }}
-        {{ partial "notice.html" (dict "context" . "notices" $paginator.Pages ) }}
+        {{ partial "notice-card.html" (dict "context" . "notices" $paginator.Pages ) }}
         {{ partial "pagination.html" . }}
     </div>
 </div>

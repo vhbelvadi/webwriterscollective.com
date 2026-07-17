@@ -1,0 +1,47 @@
+<div class="w-full flex flex-row flex-wrap gap-2 items-start">
+    {{ $notices := .notices }}
+
+    {{ if not $notices }}
+        {{ $notices = .context.RegularPages.ByDate.Reverse }}
+    {{ end }}
+
+    {{ range $notices }}
+        <div class="notice-card border border-foreground bg-offset w-full lg:w-[calc(50%-calc(var(--spacer)))]">
+            {{ with .Resources.GetMatch .Params.cover }}
+            <div class="aspect-4/3">
+              <img
+                src="{{ .RelPermalink }}"
+                alt="{{ $.Title }}"
+                class="w-full h-full object-cover border-b border-foreground">
+            </div>
+            {{ end }}
+            <div class="p-1.5">
+                <a href="{{ .RelPermalink }}" class="heading-link text-lg font-medium mb-0.25!">
+                    {{ .Title }}
+                    {{ with .Params.subtitle }}
+                        <h3 class="font-normal! text-balance text-foreground/40 mt-0.25! mb-0.5!">{{ . }}</h3>
+                    {{ end }}
+                </a>
+
+                <div class="block w-2 border-t-2 border-foreground my-2"></div>
+
+                <div class="prose">
+                    {{ .Summary | plainify }}
+                </div>
+
+                {{ $page := . }}
+                {{ with .Params.authors }}
+                    <p class="mt-1!">
+                        {{ partial "authors.html" . }} {{ with $page.Date }}<br/><span class="text-foreground/40">{{ .Format "2 January 2006" }}</span>{{ end }}
+                    </p>
+                {{ end }}
+
+                {{ $u := urls.Parse .Params.external_link }}
+                <div class="flex flex-row flex-wrap gap-x-1 gap-y-1 mt-2">
+                    <a href="{{ .RelPermalink }}" class="button more-internal">More</a>
+                    {{ with .Params.external_link }}<a href="{{ . }}" class="button more-external">View on {{ strings.TrimPrefix "www." $u.Host }} &nearr;</a>{{ end }}
+                </div>
+            </div>
+        </div>
+    {{ end }}
+</div>

@@ -1,34 +1,49 @@
 ---
 title: About our collective
 menu_title: About
+order: 4
 date: 2026-07-14T10:41:21+01:00
 type: page
 draft: false
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ultrices posuere. Maecenas interdum nunc magna, non blandit tortor accumsan non. Ut eleifend, sem scelerisque porttitor tincidunt, magna quam efficitur quam, non mattis ipsum ex nec orci. Maecenas ac dolor ac felis placerat tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat lorem vitae lacus cursus blandit. Curabitur at est tincidunt, posuere metus mattis, interdum elit. 
 
-Donec iaculis velit diam, at ultrices dolor pretium at. Integer faucibus et eros vitae faucibus. Maecenas in mauris ac metus pharetra rutrum. Sed eu tincidunt quam, quis auctor leo. Morbi laoreet, mi sed dignissim tempor, ligula velit elementum dolor, a mollis lorem mauris cursus tellus.
+# Who we are
 
-# Nulla facilisi sed at tincidunt lorem
+Web Writers Collective (WWC) is a Signal group for people who write on the web to chat about the culture of writing on the web, and to connect with (and maybe even collaborate with) like-minded writers.
 
-Eu faucibus ante. Vivamus facilisis velit sed nunc maximus hendrerit a vel est. In pharetra scelerisque sapien, sit amet semper odio luctus ac. Vivamus porttitor ipsum at rhoncus tincidunt. Curabitur sagittis ullamcorper purus ac placerat. Nulla facilisi. Fusce et ex eget nulla ullamcorper consequat id et ipsum. 
+If you are interested in writing, or who actively write, on the web, you may like WWC.
 
-In eget nisi interdum, dictum quam vel, euismod nisl. Suspendisse potenti. Quisque tortor nisi, dictum ut ex non, dapibus ultrices neque. Sed viverra dolor faucibus elit aliquam, ac condimentum massa malesuada.
+# What we do
 
-## Sed porta tincidunt auctor
+You might join the group to talk about—
 
-Proin non odio a elit feugiat egestas. Phasellus laoreet placerat massa in eleifend. Nulla tincidunt tristique vehicula. Proin volutpat id ligula eget commodo. Cras nec est vitae lectus imperdiet molestie ac et lacus. Aliquam id lectus maximus, tempus purus id, gravida felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dignissim magna efficitur tincidunt viverra. Phasellus mattis rutrum dapibus. Cras sed nulla id dolor pretium porttitor. In nec consectetur libero. Pellentesque nec nisi vitae massa mattis facilisis vestibulum id est. Integer auctor ac risus nec consequat. Suspendisse consectetur venenatis justo, ac efficitur metus interdum non. Donec mattis enim in lectus imperdiet auctor.
+* Writing projects you’re working on that you would like feedback on
+* The culture of writing on the web: what to share, how to share, who to share with
+* Working through a specific challenge, i.e. how to articulate an idea, finding inspiration, working through writer’s block.
+* Community events you’re participating in, i.e. the Bear Blog Carnival.
 
-### Aliquam auctor tellus
+We especially welcome people who write fiction, stories, creative non-fiction, poetry, life writing, personal blog posts, and everything in between.
 
-Nec lacus malesuada finibus. Vestibulum in sodales felis. Vestibulum elit odio, sollicitudin et pellentesque vel, mollis non magna. Praesent aliquam magna et enim consequat, ut vehicula orci rhoncus. 
+# Who we are not
 
-Curabitur sollicitudin sapien vitae arcu laoreet, in interdum arcu lobortis. Vivamus tincidunt massa a ligula pretium, vitae sollicitudin massa egestas. Morbi tempus, odio nec bibendum mollis, eros erat fermentum quam, vel congue risus erat eu augue. Sed et risus mollis, varius risus quis, tempor neque. Curabitur pulvinar nec mi a tincidunt. Vivamus vestibulum turpis in faucibus accumsan.
+Please note that our community is not for—
 
-# Vivamus nec sollicitudin sapien
-## Vitae aliquam felis
-### Nullam est neque
+* Sharing your blog set-up or features on your blog
+* Announcing or self-promoting your blog posts
+* Technical writing
 
-Volutpat ac risus a, laoreet varius ex. Donec non sagittis metus. Cras fermentum, massa sed imperdiet semper, enim justo sollicitudin mauris, vel euismod turpis nisl vitae neque. Duis nisi dolor, fermentum vel condimentum nec, efficitur in lacus. Vivamus sollicitudin nisl quam, id scelerisque urna volutpat non. Mauris id lectus urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In nec velit quis ipsum posuere maximus. 
+Spaces already exist on the web for such activities. At WWC we like to keep our focus on our writing.
 
-Donec congue dui eget eros placerat, non malesuada tortor aliquam. Duis bibendum, elit sit amet interdum feugiat, turpis tortor bibendum enim, eget consequat metus lorem et ex. Nullam eu magna mollis, rhoncus ex at, viverra velit. Phasellus vitae metus metus. Vestibulum aliquam libero nec quam commodo, eu posuere lacus ullamcorper.
+# How we’re run
+
+We are still getting set up, but we intend to keep WWC community-run. [James](/authors/james-g/) is helping get the community set up. [V.H. Belvadi](/authors/vh-belvadi) is helping get our website set up. All members are free to propose projects, share ideas, and help guide the group while keeping it a fun, safe, thoughtful and interesting place to spend time on the web.
+
+**WWC is invite-only** for the moment as we set an initial direction for the community. We also believe in the importance of having private spaces where people can freely discuss their writing, for reasons we note in our *Talking about discussions* guidance below.
+
+# Join us
+
+We are currently an invite-only group, organised over Signal. There are ~15 members at the moment.
+
+Send an email to [readers@jamesg.blog](mailto:readers@jamesg.blog) to request an invite.
+
+*See also our [community guidelines](/community-guidelines).*
