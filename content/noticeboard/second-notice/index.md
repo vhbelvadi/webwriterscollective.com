@@ -7,7 +7,7 @@ authors: ["Author Two","Author Three"]
 external_link: "https://www.indieweb.org"
 date: 2026-07-16T16:31:58+01:00
 type: notice
-draft: true
+draft: false
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ultrices posuere. Maecenas interdum nunc magna, non blandit tortor accumsan non. Ut eleifend, sem scelerisque porttitor tincidunt, magna quam efficitur quam, non mattis ipsum ex nec orci. Maecenas ac dolor ac felis placerat tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat lorem vitae lacus cursus blandit. Curabitur at est tincidunt, posuere metus mattis, interdum elit. Donec iaculis velit diam, at ultrices dolor pretium at. Integer faucibus et eros vitae faucibus. Maecenas in mauris ac metus pharetra rutrum. Sed eu tincidunt quam, quis auctor leo. Morbi laoreet, mi sed dignissim tempor, ligula velit elementum dolor, a mollis lorem mauris cursus tellus.
 

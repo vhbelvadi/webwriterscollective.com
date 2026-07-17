@@ -7,7 +7,7 @@ tags: ["Tag one","Tag two"]
 cover: "sample.webp"
 syndication_link: "https://vhbelvadi.com/indieweb-ai-normativity"
 type: article
-draft: true
+draft: false
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ultrices posuere. Maecenas interdum nunc magna, non blandit tortor accumsan non. Ut eleifend, sem scelerisque porttitor tincidunt, magna quam efficitur quam, non mattis ipsum ex nec orci. Maecenas ac dolor ac felis placerat tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat lorem vitae lacus cursus blandit. Curabitur at est tincidunt, posuere metus mattis, interdum elit. 
 
