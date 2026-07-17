@@ -1,6 +1,31 @@
 {{ define "main" }}
-<main class="mx-auto max-w-4xl p-8">
-  <h1 class="text-xl">{{ site.Title }}</h1>
-  <p class="mt-4 text-lg">Welcome to Web Writers Collective.</p>
+<div class="w-full p-1.5 text-center pb-6 mb-2 border-b border-foreground">
+    <h2 class="text-xl font-light! max-w-56 mx-auto leading-[1.2]! [&>p>strong]:font-medium!">{{ .Content }}</h2>
+</div>
+<main class="mx-auto">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:divide-x divide-foreground">
+      <!-- ANTHOLOGIES -->
+      <div class="col-span-1 lg:pr-2">
+        <header>
+            <h1>Anthologies</h1>
+        </header>
+        {{ with site.GetPage "section" "anthologies" }}
+            <div class="flex flex-col gap-2 col-span-1 mt-4">
+                {{ partial "issue-card.html" (dict "context" . "size" "small-size" "issues" (first 1 (.Pages.ByParam "issue").Reverse) ) }}
+            </div>
+        {{ end}}
+      </div>
+      <!-- NOTICEBOARD -->
+      <div class="col-span-1 lg:col-span-2">
+        <header>
+            <h1>Noticeboard</h1>
+        </header>
+        {{ with site.GetPage "section" "noticeboard" }}
+            <div class="mt-4">
+                {{ partial "notice.html" (dict "context" . "notices" (first 10 .RegularPages.ByDate.Reverse) ) }}
+            </div>
+        {{ end }}
+      </div>
+  </div>
 </main>
 {{ end }}

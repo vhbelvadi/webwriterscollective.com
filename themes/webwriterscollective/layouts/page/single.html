@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article class="flex flex-col lg:flex-row items-start justify-between gap-6">
+    <header class="basis-[25%]">
+      <h1>{{ .Title }}</h1>
+    </header>
+    <div class="basis-[50%] prose max-w-(--article-width)">
+        {{ .Content }}
+    </div>
+    <div class="basis-[20%] flex justify-end self-end">
+    </div>
+</article>
+{{ end }}

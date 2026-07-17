@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-4 items-stretch justify-between">
+    <div class="col-span-1">
+        <header class="lg:sticky top-1.5">
+            <h1>{{ .Title }}</h1>
+            <h2>{{ .Content }}</h2>
+        </header>
+    </div>
+
+
+    <div class="col-span-1 lg:col-span-2">
+        {{ $paginator := .Paginate (.RegularPages.ByDate.Reverse) 15 }}
+        {{ partial "notice.html" (dict "context" . "notices" $paginator.Pages ) }}
+        {{ partial "pagination.html" . }}
+    </div>
+</div>
+{{ end }}

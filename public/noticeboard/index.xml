@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Noticeboard on Web Writers’ Collective</title>
+    <link>http://localhost:1313/noticeboard/</link>
+    <description>Recent content in Noticeboard on Web Writers’ Collective</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 16 Jul 2026 16:31:58 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/noticeboard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Here is yet another notice</title>
+      <link>http://localhost:1313/noticeboard/second-notice/</link>
+      <pubDate>Thu, 16 Jul 2026 16:31:58 +0100</pubDate>
+      <guid>http://localhost:1313/noticeboard/second-notice/</guid>
+      <description>Maecenas interdum nunc magna, non blandit tortor accumsan non. Ut eleifend, sem scelerisque porttitor tincidunt.</description>
+    </item>
+    <item>
+      <title>This is a notice</title>
+      <link>http://localhost:1313/noticeboard/first-notice/</link>
+      <pubDate>Tue, 14 Jul 2026 23:44:14 +0100</pubDate>
+      <guid>http://localhost:1313/noticeboard/first-notice/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ultrices posuere.</description>
+    </item>
+  </channel>
+</rss>

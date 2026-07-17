@@ -1,31 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Authors on Web Writers’ Collective</title>
-		<link>http://localhost:1313/authors/</link>
-		<description>Recent content in Authors on Web Writers’ Collective</description>
-		<generator>Hugo</generator>
-		<language>en-GB</language>
-		
-		
-		
-		
-			<lastBuildDate>Mon, 13 Jul 2026 16:24:31 +0100</lastBuildDate>
-		
-			<atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>Author One</title>
-				<link>http://localhost:1313/authors/author-one/</link>
-				<pubDate>Mon, 13 Jul 2026 16:24:31 +0100</pubDate>
-				<guid>http://localhost:1313/authors/author-one/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Author Two</title>
-				<link>http://localhost:1313/authors/author-two/</link>
-				<pubDate>Mon, 13 Jul 2026 16:24:31 +0100</pubDate>
-				<guid>http://localhost:1313/authors/author-two/</guid>
-				<description></description>
-			</item>
-	</channel>
+  <channel>
+    <title>Our authors on Web Writers’ Collective</title>
+    <link>http://localhost:1313/authors/</link>
+    <description>Recent content in Our authors on Web Writers’ Collective</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 16 Jul 2026 16:31:58 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Author Three</title>
+      <link>http://localhost:1313/authors/author-three/</link>
+      <pubDate>Thu, 16 Jul 2026 16:31:58 +0100</pubDate>
+      <guid>http://localhost:1313/authors/author-three/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Author Two</title>
+      <link>http://localhost:1313/authors/author-two/</link>
+      <pubDate>Thu, 16 Jul 2026 16:31:58 +0100</pubDate>
+      <guid>http://localhost:1313/authors/author-two/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sylvia Plath</title>
+      <link>http://localhost:1313/authors/sylvia-plath/</link>
+      <pubDate>Tue, 14 Jul 2026 23:44:14 +0100</pubDate>
+      <guid>http://localhost:1313/authors/sylvia-plath/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Author Four</title>
+      <link>http://localhost:1313/authors/author-four/</link>
+      <pubDate>Tue, 14 Jul 2026 08:32:08 +0100</pubDate>
+      <guid>http://localhost:1313/authors/author-four/</guid>
+      <description></description>
+    </item>
+  </channel>
 </rss>

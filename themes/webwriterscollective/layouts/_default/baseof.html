@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ block "title" . }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
-  <link rel="stylesheet" href="{{ "css/app.css" | relURL }}">
-  {{ block "head" . }}{{ end }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ block "title" . }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+    <link rel="stylesheet" href="https://use.typekit.net/htj5fgo.css">
+    <link rel="stylesheet" href="{{ "css/app.css" | relURL }}">
+    {{ with .Params.syndication_link }}
+        <link rel="canonical" href="https://example.com/original-article">
+    {{ end }}
+    <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Web Writers" />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+    {{ block "head" . }}{{ end }}
 </head>
 <body class="max-w-350 mx-auto">
   {{ partial "nav.html" . }}
-  <main class="mx-3">
+  <main class="mx-1.5 py-6">
       {{ block "main" . }}{{ end }}
   </main>
+  {{ partial "footer.html" . }}
 </body>
 </html>

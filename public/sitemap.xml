@@ -2,31 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/anthologies/</loc>
-    <lastmod>2026-07-13T16:24:31+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/authors/author-one/</loc>
-    <lastmod>2026-07-13T16:24:31+01:00</lastmod>
+    <loc>http://localhost:1313/authors/author-three/</loc>
+    <lastmod>2026-07-16T16:31:58+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/authors/author-two/</loc>
-    <lastmod>2026-07-13T16:24:31+01:00</lastmod>
+    <lastmod>2026-07-16T16:31:58+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/noticeboard/second-notice/</loc>
+    <lastmod>2026-07-16T16:31:58+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/noticeboard/</loc>
+    <lastmod>2026-07-16T16:31:58+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/authors/</loc>
+    <lastmod>2026-07-16T16:31:58+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-16T16:31:58+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/authors/sylvia-plath/</loc>
+    <lastmod>2026-07-14T23:44:14+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/noticeboard/first-notice/</loc>
+    <lastmod>2026-07-14T23:44:14+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2026-07-14T10:41:21+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/anthologies/</loc>
+    <lastmod>2026-07-14T10:41:21+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/anthologies/2/</loc>
+    <lastmod>2026-07-14T10:41:21+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/authors/author-four/</loc>
+    <lastmod>2026-07-14T08:32:08+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/anthologies/1/consectetur/</loc>
+    <lastmod>2026-07-14T08:32:08+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/anthologies/2/consectetur/</loc>
+    <lastmod>2026-07-14T08:32:08+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/anthologies/1/dolor-sit-amet/</loc>
+    <lastmod>2026-07-14T08:32:08+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tag-one/</loc>
+    <lastmod>2026-07-14T08:32:08+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-07-14T08:32:08+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tagthree/</loc>
+    <lastmod>2026-07-14T08:32:08+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/anthologies/1/felis/</loc>
+    <lastmod>2026-07-13T16:25:31+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tag-two/</loc>
+    <lastmod>2026-07-13T16:25:31+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/anthologies/2/felis/</loc>
     <lastmod>2026-07-13T16:24:31+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/anthologies/1/lorem-ipsum/</loc>
-    <lastmod>2026-07-13T16:24:31+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/tag-one/</loc>
-    <lastmod>2026-07-13T16:24:31+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/tag-two/</loc>
-    <lastmod>2026-07-13T16:24:31+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-07-13T16:24:31+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-07-13T16:24:31+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/anthologies/1/</loc>

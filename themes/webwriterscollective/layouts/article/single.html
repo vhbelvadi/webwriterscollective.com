@@ -1,26 +1,36 @@
 {{ define "main" }}
-<article class="mx-auto max-w-3xl p-8">
-  <header>
-    <h1 class="text-4xl font-bold">{{ .Title }}</h1>
+<article class="flex flex-col lg:flex-row items-start justify-between gap-2">
+    <header class="basis-[30%]">
+      <h1>{{ .Title }}</h1>
 
-    {{ with .Params.subtitle }}
-      <p class="mt-2 text-xl">{{ . }}</p>
-    {{ end }}
+      {{ with .Params.subtitle }}
+        <h2>{{ . }}</h2>
+      {{ end }}
 
-    <p class="mt-4">
-      Issue {{ .Parent.Params.issue }} ·
-      {{ .Date.Format "2 January 2006" }}
-    </p>
-
-    {{ with .Params.authors }}
-      <p class="mt-2">
-        By {{ delimit . ", " }}
-      </p>
-    {{ end }}
-  </header>
-
-  <div class="prose mt-8">
-    {{ .Content }}
-  </div>
+      {{ with .Params.authors }}
+        <p class="mt-1.5">
+          By {{ partial "authors.html" . }}
+        </p>
+      {{ end }}
+    </header>
+    <div class="basis-[45%] prose max-w-(--article-width)">
+        {{ with .Resources.GetMatch .Params.cover }}
+          <img
+            src="{{ .RelPermalink }}"
+            alt="{{ $.Title }}"
+            class="mb-2.5 rounded-sm w-full">
+        {{ end }}
+        {{ .Content }}
+    </div>
+    <div class="basis-[25%] issue-info flex justify-end self-end">
+        <div class="issue-browser w-full border border-foreground p-1 bg-offset" style="background: rgb({{ .Parent.Params.accent }});">
+            <span class="font-normal block mb-0.5"><a href="{{ .Parent.Permalink }}" class="all-caps font-semibold all-caps text-sm">issue {{ .Parent.Params.issue }}</a></span>
+            <div class="issue-articles border-t-2 border-b border-foreground divide-y divide-foreground">
+                {{ range .Parent.Pages }}
+                    <a href="{{ .Permalink }}" class="py-0.5 block">{{ .Title }}</a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
 </article>
 {{ end }}

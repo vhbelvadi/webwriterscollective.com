@@ -1,0 +1,7 @@
+{{ $last := sub (len . ) 1 }}
+{{- range $i, $author := . -}}
+    {{- if gt $i 0 -}}
+        {{- if eq $i $last -}}&nbsp;and&nbsp;{{- else -}},&nbsp;{{- end -}}
+    {{- end -}}
+    <a href="{{ "/authors/" | relURL }}{{ $author | urlize }}/">{{- $author -}}</a>
+{{- end -}}

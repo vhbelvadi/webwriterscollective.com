@@ -3,15 +3,17 @@
 /* FONTS */
 @font-face {
   font-family: "WebWritersSans";
-  src: url("/fonts/GT-America-VF.woff2") format("woff2");
-  font-weight: 300 900;
+  src: url("/fonts/gamay-variable.woff2") format("woff2");
+  font-weight: 75 900;
+  font-stretch: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "WebWritersSans";
-  src: url("/fonts/GT-America-Italic-VF.woff2") format("woff2");
-  font-weight: 300 900;
+  src: url("/fonts/gamay-variable-italic.woff2") format("woff2");
+  font-weight: 75 900;
+  font-stretch: normal;
   font-style: italic;
   font-display: swap;
 }
@@ -19,36 +21,66 @@
   font-family: "WebWritersMono";
   src: url("/fonts/GT-America-Mono-VF.woff2") format("woff2");
   font-weight: 300 900;
+  font-stretch: normal;
   font-style: normal;
   font-display: swap;
 }
 
-/* THEME and UTILITIES */
+/* THEME */
 @theme inline {
+    /* Spacing */
+    --spacing: var(--spacer);
+
     /* Colours */
     --color-accent: var(--accent);
     --color-foreground: rgb(var(--foreground));
     --color-background: rgb(var(--background));
+    --color-offset: rgb(var(--offset));
 
     /* Typography */
     --font-sans: var(--sans);
     --font-sans--font-feature-settings: var(--sans-features);
+
+    /* Text sizing */
     --text-sm: var(--sm);
-    --leading-sm: var(--sm-leading);
+    --text-sm--line-height: var(--sm-leading);
     --text-base: var(--base);
-    --leading-base: var(--base-leading);
+    --text-base--line-height: var(--base-leading);
     --text-body: var(--body);
-    --leading-body: var(--body-leading);
+    --text-body--line-height: var(--body-leading);
     --text-lg: var(--lg);
-    --leading-lg: var(--lg-leading);
+    --text-lg--line-height: var(--lg-leading);
     --text-xl: var(--xl);
-    --leading-xl: var(--xl-leading);
+    --text-xl--line-height: var(--xl-leading);
+}
+
+/* UTILITIES */
+@utility font-normal {
+    font-weight: 400;
+}
+@utility small-caps {
+    font-feature-settings: var(--sans-features), "smcp", "c2sc", "pnum" 0, "onum" 1 !important;
+    @apply tracking-wider!;
+}
+@utility all-caps {
+    font-feature-settings: var(--mono-features);
+    @apply uppercase tracking-wider!;
+}
+@utility variable-hover {
+    @apply hover:font-bold;
+    font-variation-settings: "wght" 500;
+    transition: font-variation-settings 0.3s ease-in-out;
+
+    &:hover {
+        font-variation-settings: "wght" 800;
+        transition: font-variation-settings 0.3s ease-in-out;
+    }
 }
 @utility font-condensed {
-  font-stretch: 75%;
+    font-stretch: 75%;
 }
 @utility font-expanded {
-  font-stretch: 125%;
+    font-stretch: 125%;
 }
 @utility transition-fade {
     @apply transition duration-500 ease-in-out hover:cursor-pointer!;
@@ -58,62 +90,158 @@
 /* Light scheme */
 :root {
     --foreground: 0 0 0;
-    --background: 255 255 255;
-    --accent: #F43400;
-    --article-width: 650px;
+    --background: 242 244 247;
+    --offset: 255 255 255;
+    --accent: #F46324; /*#F43400;*/
+    --article-width: 640px;
 
-    --spacer: 14px;
+    --spacer: 16px;
     --sans: "WebWritersSans","Helvetica","Arial",sans-serif;
-    --sans-features: "kern", "liga", "onum", "ss02", "ss03", "ss04", "ss05";
+    --sans-features: "kern", "liga", "onum", "ss04", "ss14", "ss16";
+    --mono: "WebWritersMono","Helvetica","Arial",sans-serif;
+    --mono-features: "kern", "liga", "tnum", "ss02", "ss03", "ss04", "ss05";
     --sm: 0.8rem;
     --sm-leading: 1.5;
     --base: 16px;
-    --base-leading: 1.4;
+    --base-leading: 1.5;
     --body: 1.25rem;
-    --body-leading: 1.4;
+    --body-leading: 1.5;
     --lg: 1.75rem;
-    --lg-leading: 1.3;
+    --lg-leading: 1.25;
     --xl: 2.5rem;
-    --xl-leading: 1.1;
+    --xl-leading: 1.2;
 }
 /* Dark scheme */
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground: 255 255 255;
-    --background: 0 0 0;
+    --foreground: 242 244 247;
+    --background: 30 33 43;
+    --offset: 0 0 0;
   }
 }
 
 /* UNIVERSAL */
 html {
-    @apply text-base font-sans text-foreground bg-background font-[430] tracking-[-0.015em];
+    @apply text-base font-sans text-foreground bg-background;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 a {
-    @apply underline decoration-wavy hover:text-accent transition-fade;
+    @apply hover:text-accent transition-fade;
 }
 button, a.button {
-    @apply decoration-0 px-2 py-0.5 bg-foreground text-background rounded font-medium hover:bg-accent hover:text-white transition-fade inline-block!;
+    @apply all-caps decoration-0 px-1 pt-[calc(var(--spacer)*0.4)] pb-0.5 bg-foreground text-background rounded font-semibold! tracking-wider hover:bg-accent hover:text-white transition-fade inline-block!;
+
+    &.disabled {
+        @apply bg-foreground/20 pointer-events-none;
+    }
+}
+
+/* NAVIGATION */
+.navlink a {
+  font-variation-settings:
+    "wght" 450;
+  transition:
+    font-variation-settings 500ms cubic-bezier(.22,1,.36,1);
+
+    &.current {
+        font-variation-settings:
+            "wght" 700;
+    }
+
+    &:hover {
+        font-variation-settings:
+            "wght" 900;
+    }
+}
+#logo a {
+  font-variation-settings:
+    "wght" 600;
+  transition:
+    font-variation-settings 500ms cubic-bezier(.22,1,.36,1);
+
+    &:hover {
+    font-variation-settings:
+        "wght" 900;
+    }
 }
 
 /* HEADINGS */
 :is(h1,h2,h3,h4,h5,h6) {
     @apply mb-1.5;
+
+    .prose &:has(+ :is(h1, h2, h3, h4, h5, h6)) {
+        @apply -mb-2.5!;
+    }
 }
 h1 {
     @apply text-lg font-semibold;
 
-    &.text-xl {
-        @apply text-xl font-normal font-condensed;
+    .prose & {
+        @apply text-body font-semibold mt-3.5 mb-1;
     }
 
-    header & {
-        @apply text-xl font-expanded;
+    &.text-xl {
+        @apply text-xl font-medium text-balance;
+    }
+
+    header &, header & p {
+        @apply text-xl font-semibold text-accent mb-1! all-caps;
+    }
+}
+h2 {
+
+    @apply text-balance;
+
+    .prose & {
+        @apply text-body font-medium mt-3.5 mb-1;
+    }
+
+    header &, header & p {
+        @apply text-xl font-normal!;
+    }
+}
+h3 {
+    @apply font-medium;
+
+    .prose & {
+        @apply italic mt-3.5 mb-1;
     }
 }
 
 /* PROSE */
 .prose {
-    @apply text-body [&>:is(p,ul,ol,blockquote,aside,figure,img)+:is(p,ul,ol,blockquote,pullquote,aside,figure,img)]:mt-4;
+    @apply text-body [&>:is(p,ul,ol,blockquote,aside,figure,img)+:is(p,ul,ol,blockquote,pullquote,aside,figure,img)]:mt-1.5;
+
+    & a {
+        @apply underline decoration-wavy hover:text-accent transition-fade;
+    }
+}
+
+/* ISSUE CARD */
+.issue-card {
+
+    &.small-size {
+
+        & .titles-list {
+            @apply hidden;
+        }
+
+        & .authors-list {
+            @apply flex;
+        }
+
+    }
+
+    &.large-size {
+
+        & .titles-list {
+            @apply flex;
+        }
+
+        & .authors-list {
+            @apply hidden;
+        }
+    }
+
 }

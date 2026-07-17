@@ -1,0 +1,23 @@
+{{ with .Paginator }}
+    {{ if gt .TotalPages 1 }}
+        <nav class="my-2 flex items-center justify-center gap-1">
+
+            {{ with .Prev }}
+                <a href="{{ .URL }}" class="button">Previous</a>
+            {{ end }}
+
+            {{ range .Pagers }}
+                {{ if eq . $.Paginator }}
+                    <button class="button active disabled">{{ .PageNumber }}</button>
+                {{ else }}
+                    <a href="{{ .URL }}" class="button">{{ .PageNumber }}</a>
+                {{ end }}
+            {{ end }}
+
+            {{ with .Next }}
+                <a href="{{ .URL }}" class="button">Next</a>
+            {{ end }}
+
+        </nav>
+    {{ end }}
+{{ end }}

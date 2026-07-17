@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sunshine and wallflowers on Web Writers’ Collective</title>
+    <link>http://localhost:1313/anthologies/2/</link>
+    <description>Recent content in Sunshine and wallflowers on Web Writers’ Collective</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 14 Jul 2026 08:32:08 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/anthologies/2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Consectetur adipiscing elit</title>
+      <link>http://localhost:1313/anthologies/2/consectetur/</link>
+      <pubDate>Tue, 14 Jul 2026 08:32:08 +0100</pubDate>
+      <guid>http://localhost:1313/anthologies/2/consectetur/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ultrices posuere. Maecenas interdum nunc magna, non blandit tortor accumsan non. Ut eleifend, sem scelerisque porttitor tincidunt, magna quam efficitur quam, non mattis ipsum ex nec orci. Maecenas ac dolor ac felis placerat tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat lorem vitae lacus cursus blandit. Curabitur at est tincidunt, posuere metus mattis, interdum elit. Donec iaculis velit diam, at ultrices dolor pretium at. Integer faucibus et eros vitae faucibus. Maecenas in mauris ac metus pharetra rutrum. Sed eu tincidunt quam, quis auctor leo. Morbi laoreet, mi sed dignissim tempor, ligula velit elementum dolor, a mollis lorem mauris cursus tellus.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Felis placerat tempor</title>
+      <link>http://localhost:1313/anthologies/2/felis/</link>
+      <pubDate>Mon, 13 Jul 2026 16:24:31 +0100</pubDate>
+      <guid>http://localhost:1313/anthologies/2/felis/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ultrices posuere. Maecenas interdum nunc magna, non blandit tortor accumsan non. Ut eleifend, sem scelerisque porttitor tincidunt, magna quam efficitur quam, non mattis ipsum ex nec orci. Maecenas ac dolor ac felis placerat tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat lorem vitae lacus cursus blandit. Curabitur at est tincidunt, posuere metus mattis, interdum elit. Donec iaculis velit diam, at ultrices dolor pretium at. Integer faucibus et eros vitae faucibus. Maecenas in mauris ac metus pharetra rutrum. Sed eu tincidunt quam, quis auctor leo. Morbi laoreet, mi sed dignissim tempor, ligula velit elementum dolor, a mollis lorem mauris cursus tellus.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

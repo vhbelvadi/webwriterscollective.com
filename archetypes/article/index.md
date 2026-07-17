@@ -5,7 +5,7 @@ authors: []
 date: {{ .Date }}
 tags: []
 cover: ""
-syndication: ""
+syndication_link: ""
 type: article
 draft: true
 ---
