@@ -34,6 +34,12 @@ Please note that our community is not for—
 
 Spaces already exist on the web for such activities. At WWC we like to keep our focus on our writing.
 
+# What is *Anthologies*?
+
+*Anthologies* is out community zine. We are just getting started with it and hope to publish it as issues, possibly quarterly and possibly themed. It will carry contributions from WWC members and, for the time being at least, will be online-only. Like everything else in WWC, the future of *Anthologies* will be shaped by existing members of the collective.
+
+Credit for the name of our zine is due to [Juhis](https://hamatti.org/) who originally came up with ‘Web Writers’ Collective Anthology’. We all really liked it and it stuck.
+
 # How we’re run
 
 We are still getting set up, but we intend to keep WWC community-run. [James](/authors/james-g/) is helping get the community set up. [V.H. Belvadi](/authors/vh-belvadi) is helping get our website set up. All members are free to propose projects, share ideas, and help guide the group while keeping it a fun, safe, thoughtful and interesting place to spend time on the web.
