@@ -26,7 +26,9 @@
         <div class="issue-browser w-full border border-foreground p-1 bg-offset" style="background: rgb({{ .Parent.Params.accent }});">
             <span class="font-normal block mb-0.5"><a href="{{ .Parent.Permalink }}" class="all-caps font-semibold all-caps text-sm">issue {{ .Parent.Params.issue }}</a></span>
             <div class="issue-articles border-t-2 border-b border-foreground divide-y divide-foreground">
-                {{ range .Parent.Pages }}
+                {{ $pages := where .Parent.Pages "RelPermalink" "ne" .RelPermalink }}
+
+                {{ range first 7 $pages }}
                     <a href="{{ .Permalink }}" class="py-0.5 block">{{ .Title }}</a>
                 {{ end }}
             </div>
