@@ -42,7 +42,7 @@ We are still getting set up, but we intend to keep WWC community-run. [James](/a
 
 # Join us
 
-We are currently an invite-only group, organised over Signal. There are ~15 members at the moment.
+We are currently an invite-only group, organised over Signal. We have about 30 members at the moment.
 
 Send an email to [readers@jamesg.blog](mailto:readers@jamesg.blog) to request an invite.
 

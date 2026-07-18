@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Our authors on Web Writers’ Collective</title>
-    <link>http://localhost:1313/authors/</link>
+    <link>https://dev.webwriterscollective.com/authors/</link>
     <description>Recent content in Our authors on Web Writers’ Collective</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 17 Jul 2026 18:53:08 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dev.webwriterscollective.com/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>James G.</title>
-      <link>http://localhost:1313/authors/james-g./</link>
+      <link>https://dev.webwriterscollective.com/authors/james-g/</link>
       <pubDate>Fri, 17 Jul 2026 18:53:08 +0100</pubDate>
-      <guid>http://localhost:1313/authors/james-g./</guid>
+      <guid>https://dev.webwriterscollective.com/authors/james-g/</guid>
       <description></description>
     </item>
     <item>
       <title>Ruben Verweij</title>
-      <link>http://localhost:1313/authors/ruben-verweij/</link>
+      <link>https://dev.webwriterscollective.com/authors/ruben-verweij/</link>
       <pubDate>Fri, 17 Jul 2026 18:46:58 +0100</pubDate>
-      <guid>http://localhost:1313/authors/ruben-verweij/</guid>
+      <guid>https://dev.webwriterscollective.com/authors/ruben-verweij/</guid>
       <description></description>
     </item>
     <item>
       <title>V.H. Belvadi</title>
-      <link>http://localhost:1313/authors/v.h.-belvadi/</link>
+      <link>https://dev.webwriterscollective.com/authors/vhbelvadi/</link>
       <pubDate>Fri, 17 Jul 2026 18:25:00 +0100</pubDate>
-      <guid>http://localhost:1313/authors/v.h.-belvadi/</guid>
+      <guid>https://dev.webwriterscollective.com/authors/vhbelvadi/</guid>
       <description></description>
     </item>
   </channel>

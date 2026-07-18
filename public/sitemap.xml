@@ -2,48 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/editing-guide/</loc>
+    <loc>https://dev.webwriterscollective.com/editing-guide/</loc>
     <lastmod>2026-07-17T20:33:07+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://dev.webwriterscollective.com/</loc>
     <lastmod>2026-07-17T20:33:07+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/community-guidelines/</loc>
+    <loc>https://dev.webwriterscollective.com/community-guidelines/</loc>
     <lastmod>2026-07-17T20:25:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/noticeboard/hwc-upcoming/</loc>
+    <loc>https://dev.webwriterscollective.com/noticeboard/hwc-upcoming/</loc>
     <lastmod>2026-07-17T18:53:08+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/james-g./</loc>
+    <loc>https://dev.webwriterscollective.com/authors/james-g/</loc>
     <lastmod>2026-07-17T18:53:08+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/noticeboard/</loc>
+    <loc>https://dev.webwriterscollective.com/noticeboard/</loc>
     <lastmod>2026-07-17T18:53:08+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/</loc>
+    <loc>https://dev.webwriterscollective.com/authors/</loc>
     <lastmod>2026-07-17T18:53:08+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/noticeboard/repeat-that/</loc>
+    <loc>https://dev.webwriterscollective.com/noticeboard/repeat-that/</loc>
     <lastmod>2026-07-17T18:46:58+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/ruben-verweij/</loc>
+    <loc>https://dev.webwriterscollective.com/authors/ruben-verweij/</loc>
     <lastmod>2026-07-17T18:46:58+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/noticeboard/join-wwc/</loc>
+    <loc>https://dev.webwriterscollective.com/noticeboard/join-wwc/</loc>
     <lastmod>2026-07-17T18:25:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/v.h.-belvadi/</loc>
+    <loc>https://dev.webwriterscollective.com/authors/vhbelvadi/</loc>
     <lastmod>2026-07-17T18:25:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://dev.webwriterscollective.com/about/</loc>
     <lastmod>2026-07-14T10:41:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/anthologies/</loc>
+    <loc>https://dev.webwriterscollective.com/anthologies/</loc>
     <lastmod>2026-07-13T15:53:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/anthologies/1/</loc>
+    <loc>https://dev.webwriterscollective.com/anthologies/1/</loc>
     <lastmod>2026-07-13T15:53:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://dev.webwriterscollective.com/tags/</loc>
   </url>
 </urlset>

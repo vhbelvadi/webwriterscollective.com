@@ -6,10 +6,14 @@ draft: false
 ---
 
 This guide is intended for existing members of WWC who may wish to edit this website for the following reasons:
-1. to post a notice to the noticeboard
-2. to submit their contribution to *Anthologies*
-3. to update their author bio and website
-4. to help fix typos or make minor improvements across this website
+1. to [post a notice](#posting-a-notice) to the noticeboard
+2. to [submit their contribution](#contributing-to-anthologies) to *Anthologies*
+3. to [update their author bio](#updating-your-author-page) and website
+4. to [help fix typos or make minor improvements](#fixing-typos) on this website
+
+An [FAQ section](#faq) follows that may be of help should you run into trouble. 
+
+This website is maintained manually and may require a bit of technical effort to contribute to or update. Our community organisers are more than happy to help get any information you may need onto this website, especially with posting notices. Please email either [James G.](mailto:readers@jamesg.blog) or [V.H. Belvadi](mailto:hello@vhbelvadi.com) with your idea or request and we will get back to you.
 
 # Prerequisites
 
@@ -19,23 +23,25 @@ We use Hugo to run this website and therefore all contributions should be in mar
 
 ***
 
-# 1. Posting a notice
+# 1. Posting a notice {#posting-a-notice}
 
 Posting a notice is a three-step process: create the notice, type up the front matter (and contents) and finally push or submit the notice.
 
-## 1a. Creating a notice
+## 1.1. Creating a notice
 
-**If you are familiar with Hugo** clone [this website’s repo](git@github.com:vhbelvadi/webwriterscollective.com.git), install Hugo and any dependencies if you have not done so already, and create a new note by running the following command from the terminal:
+***If you are familiar with Hugo*** please clone [this website’s repo](git@github.com:vhbelvadi/webwriterscollective.com.git), install Hugo and any dependencies if you have not done so already, and create a new note by running the following command from the terminal:
 
 ```
 hugo new noticeboard/your-notice-here --kind notice
 ```
 
-This should give you file inside `content/noticeboard/your-notice-here` with the approproate front matter.
+This should give you an `index.md` file inside `content/noticeboard/your-notice-here` with the approproate front matter.
 
-**If you are unfamiliar with Hugo** simply [download this file](/md-templates/notice/index.md) (or copy the contents displayed, depending on your browser) and work on it using your favourite text editor.
+<aside>
+    <em><strong>If you are unfamiliar with Hugo</strong></em> simply <a href="/md-templates/notice/index.md">download this file</a> (or copy the contents displayed, depending on your browser) and work on it using your favourite text editor following the guidelines below.
+</aside>
 
-## 1b. Front matter
+## 1.2. Front matter
 
 In the front matter for a notice, the following fields are compulsory:
 
@@ -50,7 +56,7 @@ The file you created using Hugo, or downloaded above if you went that route, wil
 
 Type the main content of your notice after the `---` at the end of the front matter. There is no word limit.
 
-## 1c. Publishing your notice
+## 1.3. Publishing your notice
 
 If you used Git and Hugo, simply submit a pull request to publish your notice. Frequent contributors may request to be added to the repo to bypass this step (we are a community after all).
 
@@ -58,15 +64,15 @@ If you downloaded the file above, simply e-mail the file to [James G](mailto:rea
 
 ***
 
-# 2. Contributing to *Anthologies*
+# 2. Contributing to *Anthologies* {#contributing-to-anthologies}
 
 The general steps for contributing to *Anthologies* is identical to posting a notice, but with a few important variations. While the steps are all detailed below, feel free to also consult the *Posting a notice* section above for additional guidance. Submitting an article is a three-step process: create the article, type up the front matter (and contents) and finally push or submit the article.
 
 Articles will be published once an entire issue of *Anthologies* is ready. This is why we will be using the word ‘submit’ rather than ‘publish’ for articles going foward.
 
-## 2a. Creating an article
+## 2.1. Creating an article
 
-**If you are familiar with Hugo** clone [this website’s repo](git@github.com:vhbelvadi/webwriterscollective.com.git), install Hugo and any dependencies if you have not done so already, and create a new article template by running the following command from the terminal:
+***If you are familiar with Hugo*** please clone [this website’s repo](git@github.com:vhbelvadi/webwriterscollective.com.git), install Hugo and any dependencies if you have not done so already, and create a new article template by running the following command from the terminal:
 
 ```
 hugo new anthologies/1/my-new-article --kind article
@@ -74,11 +80,13 @@ hugo new anthologies/1/my-new-article --kind article
 
 Make sure you change not only the article slug `my-new-article` but also the issue number `/1/` to correspond to the next issue (to which you are submitting). Check the [*Anthologies* page](/anthologies) to figure out what the upcoming issue number will be.
 
-This command should give you file inside `content/anthologies/1/your-notice-here` (or whatever issue number you picked) with the approproate front matter.
+This command should give you an `index.md` file inside `content/anthologies/1/your-notice-here` (or whatever issue number you picked) with the approproate front matter.
 
-**If you are unfamiliar with Hugo** simply [download this file](/md-templates/article/index.md) (or copy the contents displayed, depending on your browser) and work on it using your favourite text editor.
+<aside>
+<em><strong>If you are unfamiliar with Hugo</strong></em> simply <a href="/md-templates/article/index.md">download this file</a> (or copy the contents displayed, depending on your browser) and work on it using your favourite text editor following the guidelines below.
+</aside>
 
-## 2b. Front matter
+## 2.2. Front matter
 
 In the front matter for an article, the following fields are compulsory:
 
@@ -94,7 +102,7 @@ The file you created using Hugo, or downloaded above if you went that route, wil
 
 Type the main content of your article after the `---` at the end of the front matter. There is no word limit.
 
-## 2c. Submitting your article
+## 2.3. Submitting your article
 
 If you used Git and Hugo, simply submit a pull request to submit your article.
 
@@ -104,32 +112,36 @@ All articles submitted will be published together as part of an upcoming issue o
 
 ***
 
-# 3. Updating your author page
+# 3. Updating your author page {#updating-your-author-page}
 
 Everyone who has made at least one contribution to WWC – whether that is an article in *Anthologies* or a notice posted on our noticeboard – *will* have an author page that is created automatically. It is therefore *extremely* important that you—
 
 * ensure that the first time you save your author name in the `authors` field in the front matter (see above) your name is saved as you would like it to be saved
 * ensure you use the author slug as Hugo (and therefore this website) programmatically generates it to be (using a slug of your choice can break the link)
 
-[Here are](/authors/v.h.-belvadi) [examples of](/authors/james-g) author pages. *All of this section is optional.* When you publish something on WWC you will already have an author page. This sections exists simply to give you the opportunity to add a few lines to your author page and make it more approachable or, more importantly, to help someone who stumbles upon your articles or notices on WWC also find their way to your website.
+[Here are](/authors/vhbelvadi) [examples of](/authors/james-g) author pages. *All of this section is optional.* When you publish something on WWC you will already have an author page. This sections exists simply to give you the opportunity to customise your author page with a few lines of bio and, more importantly, to help someone who stumbles upon your articles or notices on WWC to also find their way to your personal website.
 
-Before starting, [visit your author page](/authors/) and note down the URL. Note particularly, the hyphens and full stops. If your name is `J.D. Salinger` and you put in, say, `authors: ["Emily Brontë","J.D. Salinger"]` in your notice or article published on this website, you will find that your author page URL ends with `/authors/j.d.-salinger` and not `/authors/jd-salinger` or some other variant. 
+Before starting, [visit your author page](/authors/) and note down the URL. Note particularly, the hyphens and full stops. If your name is `J.R.R. Tolkien` and you put in, say, `authors: ["Emily Brontë","J.R.R. Tolkien"]` in your notice or article, you will find that your author page URL ends with `../authors/j.r.r.-tolkien/` including the full stops and not simply `../authors/jrr-tolkien/` or some other variant. However, you *can* make it look like the latter by following the steps in 3.3 below.
 
-This is important for two reasons: firstly, this means your `title` (more on this below) in your author page must also be `J.D. Salinger` and not a variation; and secondly, any change to the `title`, `authors` or slug will break your author page links (everyone else’s will be safe). If you change one of these, you will have to change them all. If multiple variations are credited across multiple notices or articles, WWC will have no chocie but to treat you as multiple authors.
+Noting the initial/automatically generated URL is important for two reasons: firstly, this means your `title` in your author page must also be `J.R.R. Tolkien` and not a variation; and secondly, any change to the `title` of your author page, `authors` in your notices and articles, or the authors subfolder name will break your author page links. If you change one of these, you will have to change them all. If multiple variations exist across multiple notices or articles, WWC will have no chocie but to treat you as multiple authors.
 
-## 3a. Create your author page
+It’s OK if all this sounds complex right now. Keep reading below and you should have this set up in no time.
 
-**If you are familiar with Hugo** clone [this website’s repo](git@github.com:vhbelvadi/webwriterscollective.com.git), install Hugo and any dependencies if you have not done so already, and create your author page by running the following command from the terminal:
+## 3.1. Create your author page
+
+***If you are familiar with Hugo*** please clone [this website’s repo](git@github.com:vhbelvadi/webwriterscollective.com.git), install Hugo and any dependencies if you have not done so already, and create your author page by running the following command from the terminal:
 
 ```
 hugo new authors/firstname-lastname --kind author
 ```
 
-This should give you file inside `content/authors/firstname-lastname` with the approproate front matter.
+This should give you an `_index.md` file inside `content/authors/firstname-lastname` with the approproate front matter.
 
-**If you are unfamiliar with Hugo** simply [download this file](/md-templates/author/_index.md) (or copy the contents displayed, depending on your browser) and work on it using your favourite text editor.
+<aside>
+    <em><strong>If you are unfamiliar with Hugo</strong></em> simply <a href="/md-templates/author/_index.md">download this file</a> (or copy the contents displayed, depending on your browser) and work on it using your favourite text editor following the guidelines below.
+</aside>
 
-## 3b. Front matter
+## 3.2. Front matter
 
 In the front matter for your author page, the following fields exist:
 
@@ -137,12 +149,15 @@ In the front matter for your author page, the following fields exist:
 - `name` (this is a short form of your name used e.g. to link to your website and possibly elsewhere in future; should you decide to leave it empty, we will use your `title` instead)
 - `bio` is… your bio, *without HTML or markdown support* – just plain text
 - `website` is a full link to your site, e.g. `https://indieweb.org`
+- `url` is where your author page will be accessible (see more below)
 
 Strictly speaking, the `bio`, `name` and `website` fields are optional. (Although, surely, you would want to link back to your website!) While your author page will function without doing anything in this section, once you *do* create this page, your author page will be associated with it permanently. That means leaving the `title` field blank will also show a blank name on the WWC website, so please fill it in.
 
+The `url` field is unique in that it will be pre-populated with `/authors/<your-name>/` and you will need to replace `<your-name>` with whatever slug you want. If your name has special spacing, characters or full stops, e.g. J.R.R. Tolkien, you may wish to set the slug as `/authors/jrr-tolkien` without which your author page will be located at `/authors/j.r.r.-tolkien` instead. When you set the `url` note that your author page will be accessible on *both* URLs by design. If you do not wish to set a custom url (you may, for example, be happy with the default) then *please delete the entire field* from the front matter rather than leaving it blank.
+
 Do not type anything else in this file. Typing in what is traditionally the ‘content’ area below the last `---` will do nothing. Please see the FAQ for troubleshooting author pages.
 
-## 3c. Publishing your author page
+## 3.3. Publishing your author page
 
 If you used Git and Hugo, simply submit a pull request to publish your author page. Frequent contributors may request to be added to the repo to bypass this step (we are a community after all).
 
@@ -150,11 +165,11 @@ If you downloaded the file above, simply e-mail the file to [James G](mailto:rea
 
 ***
 
-# 4. Fixing typos and making minor changes
+# 4. Fixing typos and making minor changes {#fixing-typos}
 
 Unfortunately, you will need to be familiar with git for this. Please make your changes to [this website’s repo](git@github.com:vhbelvadi/webwriterscollective.com.git) and submit a pull request.
 
-However, we appreciate that you might spot an error or wish to suggest improvements and either might not know Git or might not want to spend time making the fixes or improvements yourself. In that case, please [write to us](mailto:hello@vhbelvadi.com) directly.
+However, we appreciate that you might spot an error or wish to suggest improvements and either might not know Git or might not want to spend time making the fixes or improvements yourself. In such cases, please do not hesitate to [write to us](mailto:hello@vhbelvadi.com) directly.
 
 ***
 
@@ -162,11 +177,22 @@ However, we appreciate that you might spot an error or wish to suggest improveme
 
 ## I don’t know markdown
 
-*That’s OK!* You can convert rich text to markdown in many ways. If you would like to learn markdown (and we certainly recommend it) there are plenty of [wonderful websites](https://learnxinyminutes.com/markdown/) on which to get started. If you use an Apple device, for example, you can type rich text in your Notes app (as of OS 27) and *copy as markdown*. Android and Windows devices offer similar features, or you can use a [web-based docx convertor](https://word2md.com/). All said and done, we still think it is simpler, not to mention quick and easy, to learn markdown.
+*That’s OK!* You can convert rich text to markdown in many ways. If you would like to learn markdown (and we certainly recommend it) there are plenty of [wonderful websites](https://learnxinyminutes.com/markdown/) on which to get started. If you use an Apple device, for example, you can type rich text in your Notes app (as of OS 27) and *copy as markdown*. Android and Windows devices offer similar features, or you can use a [web-based docx convertor](https://word2md.com/). All said and done, we think it is simpler, quicker, easier and handier to just learn markdown.
 
 ## How do I add images?
 
-Simply place the image file next to your `index.md` file and refer to it by name and extension. *Please do not place image files anywhere else.* Using images as cover is the same; specify the image in the frontmatter against the `cover` field.
+Simply place the image file next to your `index.md` file inside `your-notice` folder and refer to it by name and extension. *Please do not place image files anywhere else, especially inside the `static` folder.*
+
+```
+webwriterscollective.com
+└── content
+    └── noticeboard
+        └── your-notice
+            ├── index.md
+            └── cover.webp
+```
+
+Using images as cover is the same; specify the image in the frontmatter against the `cover` field.
 
 ## I got the issue number wrong…
 
@@ -174,7 +200,9 @@ If you typed the issue number wrong while creating a new article within Hugo, we
 
 ## My author page has a problem
 
-If your author page (a) is not showing up or (b) is missing articles and/or notices please check the following. First, ensure that your name across all your submissions is identical. Second, ensure that name matches exactly what you have filled in against `title` in the front matter of your author page. Third, 
+If your author page is (a) not showing up or (b) missing articles and/or notices, please check the following. First, ensure that your name across all your submissions is identical. Second, ensure that that name matches exactly what you have specified as the `title` in the front matter of your author page. Third, check that your folder inside `/content/authors/` is named correctly (including fullstops etc.) Fourth, check if you have specified a `url` field in the front matter and done so correctly.
+
+For example, if your name is J.R.R. Tolkien, your folder would be `/content/authors/j.r.r.-tolkien` and your author page will be accessible at `../authors/j.r.r.-tolkien` as well as at `../authors/jrr-tolkien` so you long as you set `url: "/authors/jrr-tolkien"` in your front matter.
 
 ## What is the `tags` field?
 

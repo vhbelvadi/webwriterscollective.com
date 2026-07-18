@@ -5,11 +5,19 @@
 {{ end }}
 
 {{ range $issues }}
-    <div class="issue-card {{ $.size }} border border-foreground flex flex-col {{ if ne $.size "small-size" }}lg:flex-row items-stretch gap-y-1.5{{ else }} items-start {{ end }} justify-between gap-x-4 p-1 lg:p-1.5 bg-offset">
+    <div class="issue-card {{ $.size }} border border-foreground flex flex-col {{ if ne $.size "small-size" }}lg:flex-row items-stretch gap-y-1.5{{ else }} items-start {{ end }} justify-between gap-x-2 p-1 lg:p-1.5 bg-offset">
         <div class="flex flex-col items-start justify-start {{ if ne $.size "small-size" }}lg:justify-between lg:max-w-[30%]{{ end }} gap-x-2">
+            {{ with .Resources.GetMatch .Params.cover }}
+                <div class="aspect-video mb-1">
+                    <img
+                        src="{{ .RelPermalink }}"
+                        alt="{{ $.Title }}"
+                        class="w-full h-full object-cover">
+                </div>
+            {{ end }}
             <div>
                 <span class="all-caps text-accent block mb-0.25 font-bold text-sm">Issue {{ .Params.issue }}</span>
-                {{ if ne .Title "Coming soon" }}<a href="{{ .RelPermalink }}"><h2 class="text-xl font-light!">{{ .Title }}</h2></a>{{ else }}<span class="text-foreground/40 text-xl select-none">{{ .Title }}</span>{{ end }}
+                {{ if ne .Title "Coming soon" }}<a href="{{ .RelPermalink }}"><h2 class="text-xl font-light!">{{ .Title }}</h2></a>{{ else }}<span class="text-foreground/40 text-xl select-none mb-1! block">{{ .Title }}</span>{{ end }}
             </div>
             {{ if gt .RegularPages.Len 0 }}{{ if ne $.size "small-size" }}<a href="{{ .RelPermalink }}" class="button">Read</a>{{ end }}{{ end }}
         </div>
