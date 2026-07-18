@@ -1,4 +1,4 @@
-baseURL = "https://dev.webwriterscollective.com/"
+baseURL = "https://webwriterscollective.com/"
 locale = "en-GB"
 title = "Web Writers’ Collective"
 theme = "webwriterscollective"
