@@ -1,8 +1,26 @@
+{{ with site.GetPage "banner" }}
+{{ $banner := . }}
+{{ if .Title }}
+    <div id="banner" class="bg-accent text-white py-0.5 flex flex-row items-center justify-between px-1 lg:px-1.5">
+        <div id="banner-content" class="basis-[75%]">
+            <strong style="font-weight: 600 !important">{{ .Title }}</strong> {{ .Params.callout | default "" }}
+        </div>
+
+        {{ with .Params.button_url }}
+            <div class="basis-[25%] flex flex-row justify-end gap-0.5">
+                <a class="button hover:bg-background! hover:text-foreground! whitespace-nowrap" href="{{ . }}">
+                    {{ $banner.Params.button_text | default "Learn more" }}
+                </a>
+            </div>
+        {{ end }}
+    </div>
+{{ end }}
+{{ end }}
 <div class="flex flex-row flex-wrap md:gap-4 items-start md:items-center justify-start md:justify-between max-md:divide-y divide-foreground border-b border-foreground mx-1 lg:mx-1.5">
     <div id="logo" class="max-md:w-full md:grow py-1">
         <a href="/" class="font-semibold! text-body"><img src="/favicons/favicon.svg" width="18" class="mt-[-0.25rem] inline-block mr-0.5">{{ site.Title }}</a>
     </div>
-    <nav id="menu" class="navlink max-md:w-full flex flex-row flex-wrap items-center gap-x-1.5 gap-y-0.5 justify-start md:justify-end py-1">
+    <nav id="menu" class="navlink max-md:w-full flex flex-row flex-wrap items-center gap-x-1.5 gap-y-0.5 justify-start md:justify-end py-0.75 lg:py-1">
         <!-- SECTIONS -->
         {{ range .Site.Home.Sections.ByTitle }}
             <a href="{{ .RelPermalink }}" class="{{ if or (eq . $) (and .IsSection (hasPrefix $.RelPermalink .RelPermalink)) }}current{{ end }}">{{ .Params.menu_title | default .Title }}</a>

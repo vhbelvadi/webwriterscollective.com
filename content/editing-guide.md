@@ -10,6 +10,7 @@ This guide is intended for existing members of WWC who may wish to edit this web
 2. to [submit their contribution](#contributing-to-anthologies) to *Anthologies*
 3. to [update their author bio](#updating-your-author-page) and website
 4. to [help fix typos or make minor improvements](#fixing-typos) on this website
+5. to [add a banner](#adding-a-banner) announcing something
 
 An [FAQ section](#faq) follows that may be of help should you run into trouble. 
 
@@ -29,7 +30,7 @@ Posting a notice is a three-step process: create the notice, type up the front m
 
 ## 1.1. Creating a notice
 
-***If you are familiar with Hugo*** please clone [this website’s repo](git@github.com:vhbelvadi/webwriterscollective.com.git), install Hugo and any dependencies if you have not done so already, and create a new note by running the following command from the terminal:
+***If you are familiar with Hugo*** please clone [this website’s repo](git@github.com:vhbelvadi/webwriterscollective.com.git), install Hugo and any dependencies if you have not done so already, and create a new notice by running the following command from the terminal:
 
 ```
 hugo new noticeboard/your-notice-here --kind notice
@@ -41,7 +42,7 @@ This should give you an `index.md` file inside `content/noticeboard/your-notice-
     <em><strong>If you are unfamiliar with Hugo</strong></em> simply <a href="/md-templates/notice/index.md">download this file</a> (or copy the contents displayed, depending on your browser) and work on it using your favourite text editor following the guidelines below.
 </aside>
 
-## 1.2. Front matter
+## 1.2. Front matter {#1-2}
 
 In the front matter for a notice, the following fields are compulsory:
 
@@ -52,7 +53,11 @@ In the front matter for a notice, the following fields are compulsory:
 - `type` should be `notice`
 - `draft` should be set to `false` (when you are ready to publish)
 
-The file you created using Hugo, or downloaded above if you went that route, will have other front matter fields like `cover` and `subtitle` which are self-explanatory (or see FAQs below for more). An especially important, but optional, field is `external_link` which is useful if you wish to send people to your or another relevant website as part of your notice, e.g. for a subscription form or for examples of an ongoing project.
+The file you created using Hugo, or downloaded above if you went that route, will have other front matter fields like `cover` and `subtitle` which are self-explanatory (or see FAQs below for more).
+
+***To pin your notice*** set the `pin` field to `true` (the default is `false`). A pinned notice will always appear before other notices with a subtly different design intended to draw attention to it. Multiple notices may be pinned but we recommend not pinning more than 3 at a time. If you pin your notice, please either remember to unpin the notice on a later date or let us know via e-mail how long you would like it pinned. Pinned notices may be unpinned at the descretion of our community organisers.
+
+An especially important, but optional, field is `external_link` which is useful if you wish to send people to your or another relevant website as part of your notice, e.g. for a subscription form or for examples of an ongoing project.
 
 Type the main content of your notice after the `---` at the end of the front matter. There is no word limit.
 
@@ -121,7 +126,7 @@ Everyone who has made at least one contribution to WWC – whether that is an ar
 
 [Here are](/authors/vhbelvadi) [examples of](/authors/james-g) author pages. *All of this section is optional.* When you publish something on WWC you will already have an author page. This sections exists simply to give you the opportunity to customise your author page with a few lines of bio and, more importantly, to help someone who stumbles upon your articles or notices on WWC to also find their way to your personal website.
 
-Before starting, [visit your author page](/authors/) and note down the URL. Note particularly, the hyphens and full stops. If your name is `J.R.R. Tolkien` and you put in, say, `authors: ["Emily Brontë","J.R.R. Tolkien"]` in your notice or article, you will find that your author page URL ends with `../authors/j.r.r.-tolkien/` including the full stops and not simply `../authors/jrr-tolkien/` or some other variant. However, you *can* make it look like the latter by following the steps in 3.3 below.
+Before starting, [visit your author page](/authors/) and note down the URL. Note particularly, the hyphens and full stops. If your name is `J.R.R. Tolkien` and you put in, say, `authors: ["Emily Brontë","J.R.R. Tolkien"]` in your notice or article, you will find that your author page URL ends with `../authors/j.r.r.-tolkien/` including the full stops and not simply `../authors/jrr-tolkien/` or some other variant. However, you *can* make it look like the latter by following the steps in [§3.3](#3-3) below.
 
 Noting the initial/automatically generated URL is important for two reasons: firstly, this means your `title` in your author page must also be `J.R.R. Tolkien` and not a variation; and secondly, any change to the `title` of your author page, `authors` in your notices and articles, or the authors subfolder name will break your author page links. If you change one of these, you will have to change them all. If multiple variations exist across multiple notices or articles, WWC will have no chocie but to treat you as multiple authors.
 
@@ -145,7 +150,7 @@ This should give you an `_index.md` file inside `content/authors/firstname-lastn
 
 In the front matter for your author page, the following fields exist:
 
-- `title` (despite what it looks like, this is your name and not your title – trust us – and should be *exactly* as it appears inside notes etc.)
+- `title` (despite what it looks like, this is your name and not your title – trust us – and should be *exactly* as it appears inside notices etc.)
 - `name` (this is a short form of your name used e.g. to link to your website and possibly elsewhere in future; should you decide to leave it empty, we will use your `title` instead)
 - `bio` is… your bio, *without HTML or markdown support* – just plain text
 - `website` is a full link to your site, e.g. `https://indieweb.org`
@@ -157,7 +162,7 @@ The `url` field is unique in that it will be pre-populated with `/authors/<your-
 
 Do not type anything else in this file. Typing in what is traditionally the ‘content’ area below the last `---` will do nothing. Please see the FAQ for troubleshooting author pages.
 
-## 3.3. Publishing your author page
+## 3.3. Publishing your author page {#3-3}
 
 If you used Git and Hugo, simply submit a pull request to publish your author page. Frequent contributors may request to be added to the repo to bypass this step (we are a community after all).
 
@@ -173,7 +178,32 @@ However, we appreciate that you might spot an error or wish to suggest improveme
 
 ***
 
-# FAQs
+# 5. Adding a banner {#adding-a-banner}
+
+We realise there may be times when it is worth *really* drawing people’s attention to something, much more than posting to the noticeboard or pinning a notice might do. For such times, we have a banner available for you to hoise at the very top of the WWC website. Use this power responsibly.
+
+To add a banner you will need to be familiar with Git and Hugo and make your changes to [this website’s repo](git@github.com:vhbelvadi/webwriterscollective.com.git). If you are not familiar with Git, please get in touch with us and we will sort things out for you.
+
+You will need to edit just one file located in `/content/banner/index.md` which has the following front matter:
+
+```
+---
+headless: true
+title: ""
+callout: ""
+button_text: ""
+button_url: ""
+draft: true
+---
+```
+
+The file also has instructions within it, but they are described here again for your convenience. The only compulsory field is the `title`. If you want to direct visitors to a link, provide the `button_url` and, ideally, also the `button_text` failing which the button will generically say ‘Learn more’. Leave `headless` to `true` and set `draft` to `false` when you are ready to hoist the banner publicly.
+
+Please keep everything short, including the title, callout and button text. For inspiration to cut your word count, think of the last time you came across an unweildy banner on a mobile phone.
+
+***
+
+# FAQs {#faq}
 
 ## I don’t know markdown
 
@@ -197,6 +227,10 @@ Using images as cover is the same; specify the image in the frontmatter against 
 ## I got the issue number wrong…
 
 If you typed the issue number wrong while creating a new article within Hugo, we have fallbacks in place to ensure your article does not get lost. It will, however, be misplaced because it has been filed under the wrong issue. Just [let us know](mailto:readers@jamesg.blog) and we will fix it for you.
+
+## How do I pin a notice?
+
+As discussed in [§1.2](#1-2) above, set `pin` to `true` in the front matter of your notice’s `index.md` file. Please remember that pinned notices may be unpinned at the descretion of our community organisers.
 
 ## My author page has a problem
 

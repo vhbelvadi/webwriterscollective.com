@@ -21,8 +21,15 @@
             <a href="/noticeboard"><h1>Noticeboard</h1></a>
         </header>
         {{ with site.GetPage "section" "noticeboard" }}
+            {{ $pinned := (where .RegularPages "Params.pin" true).ByDate.Reverse }}
+            {{ $normal := (where .RegularPages "Params.pin" "ne" true).ByDate.Reverse }}
+            {{ $notices := first 10 ($pinned | append $normal) }}
+
             <div class="mt-2">
-                {{ partial "notice-card.html" (dict "context" . "notices" (first 10 .RegularPages.ByDate.Reverse) ) }}
+                {{ partial "notice-card.html" (dict
+                    "context" .
+                    "notices" $notices
+                ) }}
             </div>
         {{ end }}
       </div>

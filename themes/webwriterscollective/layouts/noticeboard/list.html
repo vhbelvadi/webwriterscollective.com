@@ -9,8 +9,18 @@
 
 
     <div class="col-span-1 lg:col-span-2">
-        {{ $paginator := .Paginate (.RegularPages.ByDate.Reverse) 15 }}
-        {{ partial "notice-card.html" (dict "context" . "notices" $paginator.Pages ) }}
+        {{ $pinned := (where .RegularPages "Params.pin" true).ByDate.Reverse }}
+        {{ $normal := (where .RegularPages "Params.pin" "ne" true).ByDate.Reverse }}
+
+        {{ $pages := $pinned | append $normal }}
+
+        {{ $paginator := .Paginate $pages 15 }}
+
+        {{ partial "notice-card.html" (dict
+            "context" .
+            "notices" $paginator.Pages
+        ) }}
+
         {{ partial "pagination.html" . }}
     </div>
 </div>

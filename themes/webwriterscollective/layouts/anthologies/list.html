@@ -7,7 +7,7 @@
         </header>
     </div>
 
-    <div class="flex flex-col gap-2 col-span-1 lg:col-span-2">
+    <div class="flex flex-col gap-2 col-span-1 lg:col-span-2 items-end">
         {{ $paginator := .Paginate ((.Pages.ByParam "issue").Reverse) 7 }}
         {{ partial "issue-card.html" (dict "context" . "size" "large-size" "issues" $paginator.Pages ) }}
         {{ partial "pagination.html" . }}

@@ -8,6 +8,7 @@ external_link: ""
 date: 2026-07-17T18:25:00+01:00
 type: notice
 draft: false
+pin: true
 ---
 Interested in joining the WWC? 
 

@@ -6,7 +6,7 @@
     {{ end }}
 
     {{ range $notices }}
-        <div class="notice-card border border-foreground bg-offset w-full lg:w-[calc(50%-calc(var(--spacer)))]">
+        <div class="notice-card border border-foreground bg-offset w-full lg:w-[calc(50%-calc(var(--spacer)))] {{ if .Params.pin }}border-2! border-accent!{{ end }}">
             {{ with .Resources.GetMatch .Params.cover }}
             <div class="aspect-4/3">
               <img
@@ -23,7 +23,7 @@
                     {{ end }}
                 </a>
 
-                <div class="block w-2 border-t-2 border-foreground my-2"></div>
+                <div class="block w-2 border-t-2 border-foreground my-2 {{ if .Params.pin }}border-accent!{{ end }}"></div>
 
                 <div class="prose">
                     {{ .Summary | plainify }}

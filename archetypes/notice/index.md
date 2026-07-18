@@ -9,4 +9,5 @@ date: {{ .Date }}
 tags: []
 type: notice
 draft: true
+pin: false
 ---
