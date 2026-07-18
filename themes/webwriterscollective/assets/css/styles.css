@@ -118,7 +118,7 @@
   :root {
     --foreground: 242 244 247;
     --background: 30 33 43;
-    --offset: 0 0 0;
+    --offset: 12 14 24;
   }
 }
 
