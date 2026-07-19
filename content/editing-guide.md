@@ -154,11 +154,19 @@ In the front matter for your author page, the following fields exist:
 - `name` (this is a short form of your name used e.g. to link to your website and possibly elsewhere in future; should you decide to leave it empty, we will use your `title` instead)
 - `bio` is… your bio, *without HTML or markdown support* – just plain text
 - `website` is a full link to your site, e.g. `https://indieweb.org`
-- `url` is where your author page will be accessible (see more below)
 
 Strictly speaking, the `bio`, `name` and `website` fields are optional. (Although, surely, you would want to link back to your website!) While your author page will function without doing anything in this section, once you *do* create this page, your author page will be associated with it permanently. That means leaving the `title` field blank will also show a blank name on the WWC website, so please fill it in.
 
-The `url` field is unique in that it will be pre-populated with `/authors/<your-name>/` and you will need to replace `<your-name>` with whatever slug you want. If your name has special spacing, characters or full stops, e.g. J.R.R. Tolkien, you may wish to set the slug as `/authors/jrr-tolkien` without which your author page will be located at `/authors/j.r.r.-tolkien` instead. When you set the `url` note that your author page will be accessible on *both* URLs by design. If you do not wish to set a custom url (you may, for example, be happy with the default) then *please delete the entire field* from the front matter rather than leaving it blank.
+There are two especially important fields for author pages:
+
+- `url` is where your author page will be accessible
+- `aliases` which allows multiple links to your author page
+
+The `url` field is unique in that it will be pre-populated with `/authors/<your-name>/` and you will need to replace `<your-name>` with whatever slug you want. If your name has special spacing, characters or full stops, e.g. J.R.R. Tolkien, you may wish to set the slug as `/authors/jrr-tolkien` without which your author page will be located at `/authors/j.r.r.-tolkien` instead.
+
+When you set the `url` note that your old author page will no longer be accessible, i.e. at `/authors/j.r.r.-tolkien`. If you want it to be accessible on *both* URLs, say if you have previously been sharing the automatic URL, set the old URL as an alias. Although you can use this field to set a completely arbitrary URL as well, we request that you please do not do so.
+
+If you do not wish to set a custom `url` (you may, for example, be happy with the default) then *please delete the entire field* from the front matter rather than leaving it blank. Likewise delete the entire `aliases` field as well.
 
 Do not type anything else in this file. Typing in what is traditionally the ‘content’ area below the last `---` will do nothing. Please see the FAQ for troubleshooting author pages.
 
