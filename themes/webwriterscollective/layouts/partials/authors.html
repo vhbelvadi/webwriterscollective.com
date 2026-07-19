@@ -3,5 +3,11 @@
     {{- if gt $i 0 -}}
         {{- if eq $i $last -}}&nbsp;and&nbsp;{{- else -}},&nbsp;{{- end -}}
     {{- end -}}
-    <a href="{{ "/authors/" | relURL }}{{ $author | urlize }}/">{{- $author -}}</a>
+    {{- $term := site.GetPage (printf "/authors/%s" ($author | urlize)) -}}
+
+    {{- if $term -}}
+      <a href="{{ $term.RelPermalink }}">{{- $author -}}</a>
+    {{- else -}}
+      <a href="{{ "/authors/" | relURL }}{{ $author | urlize }}/">{{- $author -}}</a>
+    {{- end -}}
 {{- end -}}
