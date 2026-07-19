@@ -1,9 +1,11 @@
 # webwriterscollective.com
 
-Website for the Web Writers’ Collective.
+Website for the Web Writers’ Collective: <https://webwriterscollective.com>
 
 <!-- TBW -->
 
-Editing guide: <https://dev.webwriterscollective.com/editing-guide>
+To join or find out more, read our *About* page: <https://webwriterscollective.com/about>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0d9173c8-4a0c-43d2-9b03-57f5617b2539/deploy-status)](https://app.netlify.com/projects/webwriterscollective-dev/deploys)
+To contribute, please consult our editing guide: <https://webwriterscollective.com/editing-guide>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a4daf88e-7a3a-4123-9388-76bb85658863/deploy-status)](https://app.netlify.com/projects/webwriterscollective/deploys)
