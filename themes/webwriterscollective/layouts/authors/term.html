@@ -11,7 +11,7 @@
         <a href="{{ . }}" class="button mt-1.5">{{ $.Params.name | default $.Title }}’s website &nearr;</a>
       {{ end }}
     </header>
-    <div class="basis-[50%] w-(--article-width) max-w-full">
+    <div class="basis-[45%] w-(--article-width) max-w-full">
         <div class="flex flex-col gap-2">
             {{ range .Pages.ByDate.Reverse }}
                 <div class="block post-list-item w-full group hover:text-foreground! p-1 lg:p-1.5 bg-offset border border-foreground">
@@ -36,9 +36,9 @@
             {{ end }}
         </div>
     </div>
-    <div class="basis-[20%] issue-info flex justify-end self-end">
-        <div class="issue-browser border border-foreground p-1 bg-offset">
-            <a href="/authors/" class="font-semibold all-caps text-sm block mb-0.5">Discover other writers</a>
+    <div class="w-full lg:basis-[25%] issue-info flex justify-end self-end">
+        <div class="issue-browser w-full border border-foreground p-1 bg-offset">
+            <a href="/authors/" class="font-semibold all-caps text-sm block mb-0.5">Discover other authors</a>
             <div class="issue-articles border-t-2 border-b border-foreground divide-y divide-foreground">
                 {{ $others := where .Parent.Pages "RelPermalink" "ne" .RelPermalink }}
 
