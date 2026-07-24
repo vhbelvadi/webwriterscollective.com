@@ -1,6 +1,6 @@
 ---
 title: "Express your interest in WWC"
-subtitle: ""
+subtitle: "Join our collective"
 summary: "Find out more about joining our positive, constructive and inclusive community."
 cover: ""
 authors: ["James G.","V.H. Belvadi"]
