@@ -132,7 +132,11 @@ a {
     @apply hover:text-accent transition-fade;
 }
 button, a.button {
-    @apply decoration-0 px-0.75 pt-[calc(var(--spacer)*0.275)] pb-[calc(var(--spacer)*0.3)] bg-foreground text-background font-semibold! hover:bg-accent hover:text-white transition-fade inline-block!;
+    @apply decoration-0 px-0.75 pt-[calc(var(--spacer)*0.275)] pb-[calc(var(--spacer)*0.3)] border-2 border-foreground bg-foreground text-background font-semibold! hover:bg-accent hover:text-white hover:border-accent transition-fade inline-block!;
+
+    &.secondary {
+        @apply bg-background border-2 border-foreground text-foreground hover:bg-foreground hover:text-background transition-fade;
+    }
 
     &.disabled {
         @apply bg-foreground/20 pointer-events-none;
