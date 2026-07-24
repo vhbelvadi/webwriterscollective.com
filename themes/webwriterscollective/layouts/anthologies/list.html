@@ -4,11 +4,15 @@
         <header class="lg:sticky top-1.5">
             <h1>{{ .Title }}</h1>
             <h2>{{ .Content }}</h2>
+            <div class="flex flex-col gap-0.5 items-start">
+                {{ with .Params.issue_notice }}<a href="{{ . }}" class="button">Upcoming theme</a>{{ end }}
+                <a href="/anthologies/contribute" class="button secondary">How do I contribute?</a>
+            </div>
         </header>
     </div>
 
     <div class="flex flex-col gap-2 col-span-1 lg:col-span-2 items-end">
-        {{ $paginator := .Paginate ((.Pages.ByParam "issue").Reverse) 7 }}
+        {{ $paginator := .Paginate ((where .Pages "Type" "issue").ByParam "issue").Reverse 7 }}
         {{ partial "issue-card.html" (dict "context" . "size" "large-size" "issues" $paginator.Pages ) }}
         {{ partial "pagination.html" . }}
     </div>
