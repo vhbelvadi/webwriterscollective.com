@@ -21,7 +21,7 @@
                     {{ if eq .Section "noticeboard" }}<div class="text-body mb-1!">{{ .Summary }}</div>{{ end }}
 
                     {{ $u := urls.Parse .Params.external_link }}
-                    <div class="flex flex-row flex-wrap gap-x-1.5 gap-y-1 my-1.5">
+                    <div class="flex flex-row flex-wrap gap-x-0.5 gap-y-1 my-1.5">
                         <a href="{{ .RelPermalink }}" class="button">{{ if .Params.external_link }}More{{ else }}Read{{ end }}</a>
                         {{ with .Params.external_link }}<a href="{{ . }}" class="button">View on {{ strings.TrimPrefix "www." $u.Host }} &nearr;</a>{{ end }}
                     </div>
