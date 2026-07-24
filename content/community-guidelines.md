@@ -33,6 +33,8 @@ You are welcome to share your blog posts and drafts. Please avoid sharing too ma
 
 # Technical topics
 
-It's too hard for us to accommodate both technical and non-technical writing right now, although this may change in the future. As a result, if you have discussions about technical writing, we recommend communities like Write the Docs, or the IndieWeb community.
+It's too hard for us to accommodate both technical and non-technical writing right now, although this may change in the future. As a result, if you have discussions about technical writing, we recommend communities like [Write the Docs](https://www.writethedocs.org/), or the [IndieWeb community](https://indieweb.org/discuss).
+
+If you want to chat about features on your personal website, please see the [IndieWeb community](https://indieweb.org/discuss) and [32-Bit Cafe](https://32bit.cafe).
 
 Interesting in joining our community? Learn more [about us](/about).
