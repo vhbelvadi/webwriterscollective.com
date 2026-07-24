@@ -2,6 +2,8 @@
 <article class="flex flex-col lg:flex-row items-start justify-between gap-6">
     <header class="basis-[25%]">
       <h1>{{ .Title }}</h1>
+      <h2>{{ .Params.subtitle }}</h2>
+      {{ with .Parent.Params.issue_notice }}<a href="{{ . }}" class="button secondary">Looking for our current theme?</a>{{ end }}
     </header>
     <div class="basis-[50%] prose w-(--article-width) max-w-full">
         {{ .Content }}
