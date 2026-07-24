@@ -1,0 +1,2 @@
+/forum    https://forum.webwriterscollective.com    301
+/forum/*  https://forum.webwriterscollective.com/:splat 301
