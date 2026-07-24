@@ -7,9 +7,9 @@ draft: false
 
 # Code of conduct
 
-Since we are a new community, we don't have a code of conduct on this site yet. With that said, we operate under IndieWeb Code of Conduct.
+Since we are a new community, we don't have a code of conduct on this site yet. With that said, we operate under <a href="https://indieweb.org/code-of-conduct">IndieWeb Code of Conduct</a>.
 
-If you would like to raise a potential violation of the code of conduct, please contact James in the Signal group.
+If you would like to raise a potential violation of the code of conduct, please contact @capjamesg.01 on Signal, or a Moderator on the community forum.
 
 Anyone found in violation of the Code of Conduct will be removed from the group.
 
@@ -17,7 +17,7 @@ Anyone found in violation of the Code of Conduct will be removed from the group.
 
 Writing can be an intimite topic: discussing things like writers block, ideas we're developing, and much more can make us feel vulnerable.
 
-No discussions that take place in WWC should be shared outside of the group chat without asking explicitly for permission. You can, however, mention the essence of a discussion (i.e. mentioning a discussion as inspiration for a blog post you are writing, provided doing so is appropriate and will not reveal anyone's identity).
+No discussions that take place in WWC should be shared outside of the group chat or forum without asking explicitly for permission. You can, however, mention the essence of a discussion (i.e. mentioning a discussion as inspiration for a blog post you are writing, provided doing so is appropriate and will not reveal anyone's identity).
 
 We require that discussions are kept confidential so that everyone feels comfortable to share freely what they are thinking in terms of writing.
 
