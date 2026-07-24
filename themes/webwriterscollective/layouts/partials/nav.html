@@ -26,6 +26,9 @@
             <a href="{{ .RelPermalink }}" class="{{ if or (eq . $) (and .IsSection (hasPrefix $.RelPermalink .RelPermalink)) }}current{{ end }}">{{ .Params.menu_title | default .Title }}</a>
         {{ end }}
 
+        <!-- FORUM -->
+        <!--<a href="https://forum.webwriterscollective.com">Forum</a>-->
+
         <!-- AUTHORS (taxonomy) -->
         <a href="/authors" class="{{ if or (eq .RelPermalink "/authors/") (hasPrefix .RelPermalink "/authors/") }}current{{ end }}">Authors</a>
 
