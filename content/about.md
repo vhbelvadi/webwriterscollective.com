@@ -44,7 +44,7 @@ Credit for the name of our zine is due to [Juhis](https://hamatti.org/) who orig
 
 We are still getting set up, but we intend to keep WWC community-run. [James](/authors/james-g/) is helping get the community set up. [V.H. Belvadi](/authors/vh-belvadi) is helping get our website set up. All members are free to propose projects, share ideas, and help guide the group while keeping it a fun, safe, thoughtful and interesting place to spend time on the web.
 
-**WWC is invite-only** for the moment as we set an initial direction for the community. We also believe in the importance of having private spaces where people can freely discuss their writing, for reasons we note in our *Talking about discussions* guidance below.
+**WWC is invite-only** for the moment as we set an initial direction for the community. We also believe in the importance of having private spaces where people can freely discuss their writing. See our *[community guidelines](/community-guidelines)* for more information.
 
 # Join us
 
