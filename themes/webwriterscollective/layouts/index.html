@@ -11,7 +11,7 @@
         </header>
         {{ with site.GetPage "section" "anthologies" }}
             <div class="flex flex-col gap-2 col-span-1 mt-2">
-                {{ partial "issue-card.html" (dict "context" . "size" "small-size" "issues" (first 1 (.Pages.ByParam "issue").Reverse) ) }}
+                {{ partial "issue-card.html" (dict "context" . "size" "small-size" "issues" (first 1 ((where .Pages "Type" "issue").ByParam "issue").Reverse) ) }}
             </div>
         {{ end}}
       </div>
