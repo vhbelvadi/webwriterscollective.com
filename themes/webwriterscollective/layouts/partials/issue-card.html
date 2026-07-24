@@ -1,7 +1,7 @@
 {{ $issues := .issues }}
 
 {{ if not $issues }}
-    {{ $issues = (.context.Pages.ByParam "issue").Reverse }}
+    {{ $issues = (.context.Pages.ByParam "issue").Reverse "Type" "issue" }}
 {{ end }}
 
 {{ $sizer := "small-size" }}
